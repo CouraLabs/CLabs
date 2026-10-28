@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CouraLabs: open-source software with AI integrations</title>
+    <meta
+      name="description"
+      content="CouraLabs is an independent studio by Rodrigo Coura. Codeboros, OpenMixing and OpenHouse: open source, self-hostable, with AI where it earns its place."
+    />
+    <meta name="theme-color" content="#0c0e16" />
+    <script>
+      // Pick the theme before first paint: saved choice, else the OS setting.
+      ;(function () {
+        var t = localStorage.getItem('cl-theme')
+        if (t !== 'dark' && t !== 'light') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
+        document.documentElement.dataset.theme = t
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

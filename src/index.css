@@ -1,0 +1,216 @@
+@import '@fontsource-variable/jost';
+@import '@fontsource-variable/geist-mono';
+
+/* Dark: ink-blue ground, three primitives in coral, indigo and mint. */
+:root,
+[data-theme='dark'] {
+  color-scheme: dark;
+  --ground: #0c0e16;
+  --ground-2: #121522;
+  --text: #eef0f7;
+  --text-2: #b0b6cc;
+  --text-3: #8a90a8;
+  --line: rgb(238 240 247 / 0.1);
+
+  --glass-bg: rgb(24 28 44 / 0.4);
+  --glass-bg-strong: rgb(24 28 44 / 0.62);
+  --glass-edge: rgb(255 255 255 / 0.13);
+  --glass-top: rgb(255 255 255 / 0.22);
+  --glass-spec: rgb(255 255 255 / 0.07);
+  --glass-shadow: 0 30px 70px -30px rgb(0 0 0 / 0.7), 0 2px 10px -4px rgb(0 0 0 / 0.4);
+  --tint: 0.16;
+
+  --btn-bg: #eef0f7;
+  --btn-text: #0c0e16;
+  --btn-hover: #ffffff;
+
+  --c-codeboros: #ff6b4a;
+  --c-codeboros-hi: #ffb08c;
+  --c-codeboros-ink: #ff9a7c;
+  --c-openmixing: #7a72ff;
+  --c-openmixing-hi: #bcb6ff;
+  --c-openmixing-ink: #aaa4ff;
+  --c-openhouse: #26cf9b;
+  --c-openhouse-hi: #92f2d0;
+  --c-openhouse-ink: #63e2b8;
+
+  --field-opacity: 0.92;
+}
+
+/* Light: cool porcelain, the same primitives a step deeper. */
+[data-theme='light'] {
+  color-scheme: light;
+  --ground: #eceef3;
+  --ground-2: #e1e4ec;
+  --text: #11131c;
+  --text-2: #43495e;
+  --text-3: #5b6176;
+  --line: rgb(17 19 28 / 0.1);
+
+  --glass-bg: rgb(255 255 255 / 0.42);
+  --glass-bg-strong: rgb(255 255 255 / 0.66);
+  --glass-edge: rgb(255 255 255 / 0.75);
+  --glass-top: rgb(255 255 255 / 0.95);
+  --glass-spec: rgb(255 255 255 / 0.5);
+  --glass-shadow: 0 30px 70px -34px rgb(34 40 72 / 0.4), 0 2px 10px -4px rgb(34 40 72 / 0.14);
+  --tint: 0.1;
+
+  --btn-bg: #11131c;
+  --btn-text: #f4f5f9;
+  --btn-hover: #262a3a;
+
+  --c-codeboros: #f2603c;
+  --c-codeboros-hi: #ffa585;
+  --c-codeboros-ink: #b93c1d;
+  --c-openmixing: #5d55f0;
+  --c-openmixing-hi: #a49eff;
+  --c-openmixing-ink: #463fd0;
+  --c-openhouse: #12b386;
+  --c-openhouse-hi: #74e4c0;
+  --c-openhouse-ink: #08795a;
+
+  --field-opacity: 0.85;
+}
+
+:root {
+  --font: 'Jost Variable', 'Jost', ui-sans-serif, system-ui, sans-serif;
+  --mono: 'Geist Mono Variable', ui-monospace, 'SF Mono', Menlo, monospace;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --r-pane: 28px;
+  --r-ctl: 999px;
+  --gutter: clamp(20px, 5vw, 72px);
+  --max: 1240px;
+  --blur: 26px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--ground);
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: clip;
+  scrollbar-color: color-mix(in srgb, var(--text) 22%, transparent) transparent;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: var(--font);
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--ground);
+  caret-color: var(--c-openmixing);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+  transition:
+    background-color 500ms var(--ease-out),
+    color 500ms var(--ease-out);
+}
+
+::selection {
+  background: color-mix(in srgb, var(--c-openmixing) 45%, transparent);
+  color: var(--text);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--text) 20%, transparent);
+  border: 3px solid var(--ground);
+  border-radius: 99px;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.22em;
+  text-decoration-thickness: 1px;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+code,
+kbd {
+  font-family: var(--mono);
+  font-size: 0.86em;
+  font-variant-numeric: tabular-nums;
+}
+
+:focus-visible {
+  outline: 2px solid var(--c-openmixing);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip {
+  position: fixed;
+  left: 16px;
+  top: 16px;
+  z-index: 100;
+  padding: 10px 18px;
+  border-radius: var(--r-ctl);
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  text-decoration: none;
+  translate: 0 -200%;
+  transition: translate 300ms var(--ease-out);
+}
+.skip:focus-visible {
+  translate: 0 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+  }
+}

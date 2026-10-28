@@ -1,0 +1,517 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-28T21:47:39+00:00",
+  "title": "Design System: CouraLabs",
+  "extensions": {
+    "colorMeta": {
+      "indigo": {
+        "role": "primary",
+        "displayName": "Mixing Indigo",
+        "canonical": "oklch(63.2% 0.203 281.4)",
+        "tonalRamp": [
+          "#0a0031",
+          "#1f135b",
+          "#372e88",
+          "#5249b8",
+          "#7169f0",
+          "#9697ff",
+          "#c1c5fe",
+          "#ebedff"
+        ]
+      },
+      "coral": {
+        "role": "secondary",
+        "displayName": "Loop Coral",
+        "canonical": "oklch(70.7% 0.187 34.1)",
+        "tonalRamp": [
+          "#220000",
+          "#480800",
+          "#711f0d",
+          "#9d3720",
+          "#d05236",
+          "#ff7455",
+          "#fdb7a5",
+          "#ffe9e3"
+        ]
+      },
+      "mint": {
+        "role": "tertiary",
+        "displayName": "House Mint",
+        "canonical": "oklch(76.1% 0.151 165.9)",
+        "tonalRamp": [
+          "#001007",
+          "#002c1e",
+          "#004c36",
+          "#036f50",
+          "#03976f",
+          "#1ec08f",
+          "#61e7b6",
+          "#c1ffe3"
+        ]
+      },
+      "ink-ground": {
+        "role": "neutral",
+        "displayName": "Ink Ground",
+        "canonical": "oklch(16.6% 0.017 273.5)",
+        "tonalRamp": [
+          "#090b12",
+          "#21242d",
+          "#3d3f49",
+          "#5a5d68",
+          "#7d808b",
+          "#a1a4b0",
+          "#c7cad6",
+          "#eaeefa"
+        ]
+      },
+      "ink-ground-raised": {
+        "role": "neutral",
+        "displayName": "Ink Ground Raised",
+        "canonical": "oklch(19.9% 0.027 273.8)",
+        "tonalRamp": [
+          "#080a16",
+          "#202330",
+          "#3c3f4b",
+          "#5a5d68",
+          "#7d8089",
+          "#a2a4ac",
+          "#c9cad0",
+          "#edeef2"
+        ]
+      },
+      "ink-text": {
+        "role": "neutral",
+        "displayName": "Ink Text",
+        "canonical": "oklch(95.6% 0.010 273.4)",
+        "tonalRamp": [
+          "#0a0b0f",
+          "#222429",
+          "#3e3f45",
+          "#5c5d63",
+          "#7e8086",
+          "#a2a4ab",
+          "#c8cad1",
+          "#eceef5"
+        ]
+      },
+      "ink-text-muted": {
+        "role": "neutral",
+        "displayName": "Ink Text Muted",
+        "canonical": "oklch(77.9% 0.032 273.5)",
+        "tonalRamp": [
+          "#0a0b0f",
+          "#22242b",
+          "#3d3f49",
+          "#595d6a",
+          "#7b7f90",
+          "#9ea4b8",
+          "#c4cadf",
+          "#e9eeff"
+        ]
+      },
+      "ink-text-faint": {
+        "role": "neutral",
+        "displayName": "Ink Text Faint",
+        "canonical": "oklch(65.7% 0.036 274.3)",
+        "tonalRamp": [
+          "#090b12",
+          "#21232e",
+          "#3b3f4d",
+          "#585d6f",
+          "#7a7f95",
+          "#9ea4ba",
+          "#c4cade",
+          "#e9eeff"
+        ]
+      },
+      "porcelain-ground": {
+        "role": "neutral",
+        "displayName": "Porcelain Ground",
+        "canonical": "oklch(94.9% 0.007 268.5)",
+        "tonalRamp": [
+          "#0a0b0e",
+          "#222428",
+          "#3e4044",
+          "#5c5d62",
+          "#7e8085",
+          "#a3a4a9",
+          "#c8cacf",
+          "#eceef3"
+        ]
+      },
+      "porcelain-text": {
+        "role": "neutral",
+        "displayName": "Porcelain Text",
+        "canonical": "oklch(18.9% 0.019 274.8)",
+        "tonalRamp": [
+          "#090b13",
+          "#21232d",
+          "#3d3f4a",
+          "#5a5d68",
+          "#7d808c",
+          "#a1a4b1",
+          "#c7cad7",
+          "#eaeefb"
+        ]
+      },
+      "indigo-hi": {
+        "role": "primary",
+        "displayName": "Indigo Highlight"
+      },
+      "indigo-ink": {
+        "role": "primary",
+        "displayName": "Indigo Ink"
+      },
+      "coral-hi": {
+        "role": "secondary",
+        "displayName": "Coral Highlight"
+      },
+      "coral-ink": {
+        "role": "secondary",
+        "displayName": "Coral Ink"
+      },
+      "mint-hi": {
+        "role": "tertiary",
+        "displayName": "Mint Highlight"
+      },
+      "mint-ink": {
+        "role": "tertiary",
+        "displayName": "Mint Ink"
+      },
+      "ink-hairline": {
+        "role": "neutral",
+        "displayName": "Ink Hairline"
+      },
+      "ink-glass": {
+        "role": "neutral",
+        "displayName": "Ink Glass"
+      },
+      "ink-glass-strong": {
+        "role": "neutral",
+        "displayName": "Ink Glass Strong"
+      },
+      "ink-glass-edge": {
+        "role": "neutral",
+        "displayName": "Ink Glass Edge"
+      },
+      "indigo-light": {
+        "role": "primary",
+        "displayName": "Deep Indigo"
+      },
+      "indigo-ink-light": {
+        "role": "primary",
+        "displayName": "Deep Indigo Ink"
+      },
+      "coral-light": {
+        "role": "secondary",
+        "displayName": "Deep Coral"
+      },
+      "coral-ink-light": {
+        "role": "secondary",
+        "displayName": "Deep Coral Ink"
+      },
+      "mint-light": {
+        "role": "tertiary",
+        "displayName": "Deep Mint"
+      },
+      "mint-ink-light": {
+        "role": "tertiary",
+        "displayName": "Deep Mint Ink"
+      },
+      "porcelain-ground-raised": {
+        "role": "neutral",
+        "displayName": "Porcelain Ground Raised"
+      },
+      "porcelain-text-muted": {
+        "role": "neutral",
+        "displayName": "Porcelain Text Muted"
+      },
+      "porcelain-text-faint": {
+        "role": "neutral",
+        "displayName": "Porcelain Text Faint"
+      },
+      "porcelain-hairline": {
+        "role": "neutral",
+        "displayName": "Porcelain Hairline"
+      },
+      "porcelain-glass": {
+        "role": "neutral",
+        "displayName": "Porcelain Glass"
+      },
+      "porcelain-glass-strong": {
+        "role": "neutral",
+        "displayName": "Porcelain Glass Strong"
+      },
+      "porcelain-glass-edge": {
+        "role": "neutral",
+        "displayName": "Porcelain Glass Edge"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline; also the About name and contact headline tier."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Project name inside the stage panel."
+      },
+      "title-sm": {
+        "displayName": "Title Sm",
+        "purpose": "Project names in the tab list and hero index."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Hero and section subcopy in muted text, 44-52ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running copy, max 60-62ch."
+      },
+      "control": {
+        "displayName": "Control",
+        "purpose": "Buttons and nav links."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Fact terms and list titles, sentence case, faint text."
+      },
+      "mono": {
+        "displayName": "Mono",
+        "purpose": "Real commands, paths and keys only."
+      }
+    },
+    "shadows": [
+      {
+        "name": "pane-dark",
+        "value": "0 30px 70px -30px rgb(0 0 0 / 0.7), 0 2px 10px -4px rgb(0 0 0 / 0.4)",
+        "purpose": "Every glass slab, panel and the nav in the dark theme."
+      },
+      {
+        "name": "pane-light",
+        "value": "0 30px 70px -34px rgb(34 40 72 / 0.4), 0 2px 10px -4px rgb(34 40 72 / 0.14)",
+        "purpose": "The same lift tinted ink-blue for porcelain."
+      },
+      {
+        "name": "glass-rim",
+        "value": "inset 0 1px 0 var(--glass-top)",
+        "purpose": "Top highlight on panes, glass buttons and selected tabs."
+      },
+      {
+        "name": "button-primary",
+        "value": "0 10px 24px -14px rgb(0 0 0 / 0.6)",
+        "purpose": "Small lift under the solid action; deepens to 0 16px 30px -16px rgb(0 0 0 / 0.65) on hover."
+      },
+      {
+        "name": "glass-blur",
+        "value": "blur(26px) saturate(165%)",
+        "purpose": "backdrop-filter for panes; nav uses 20px, glass buttons blur(14px) saturate(150%)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Default easing for every transition and entrance."
+      },
+      {
+        "name": "ease-in-out",
+        "value": "cubic-bezier(0.65, 0, 0.35, 1)",
+        "purpose": "Ambient drift loops of the primitives."
+      },
+      {
+        "name": "state",
+        "value": "200-400ms",
+        "purpose": "Hover and selection state changes."
+      },
+      {
+        "name": "glide",
+        "value": "1400ms",
+        "purpose": "A primitive gliding under the hero glass on project focus."
+      },
+      {
+        "name": "pane-in",
+        "value": "1300ms, 120ms delay",
+        "purpose": "Hero pane rises 18px and its blur resolves from zero."
+      },
+      {
+        "name": "reveal",
+        "value": "1000ms",
+        "purpose": "Sections rise 28px and unblur from 8px on scroll."
+      },
+      {
+        "name": "drift",
+        "value": "spin 90s linear; float 19-26s alternate",
+        "purpose": "Ambient primitive motion; the ring turns, discs and house drift."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "1ms",
+        "purpose": "All animation and transition collapsed under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "field-recompose",
+        "value": "1100px"
+      },
+      {
+        "name": "stack",
+        "value": "900px"
+      },
+      {
+        "name": "mobile",
+        "value": "720px"
+      },
+      {
+        "name": "narrow",
+        "value": "480px"
+      },
+      {
+        "name": "tiny",
+        "value": "420px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Solid theme-inverse pill; the main action in a pane.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Explore the projects <svg width=\"18\" height=\"18\" viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 10h12M11 5l5 5-5 5\"/></svg></a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 22px; border-radius: 999px; border: 1px solid transparent; font-family: var(--font); font-size: 1rem; font-weight: 500; line-height: 1.2; text-decoration: none; white-space: nowrap; cursor: pointer; transition: background-color 250ms var(--ease-out), translate 250ms var(--ease-out), box-shadow 250ms var(--ease-out); } .ds-btn svg { transition: translate 350ms var(--ease-out); } .ds-btn:hover svg { translate: 3px 0; } .ds-btn:focus-visible { outline: 2px solid var(--c-openmixing); outline-offset: 3px; } .ds-btn-primary { background: var(--btn-bg); color: var(--btn-text); box-shadow: 0 10px 24px -14px rgb(0 0 0 / 0.6); } .ds-btn-primary:hover { background: var(--btn-hover); translate: 0 -1px; box-shadow: 0 16px 30px -16px rgb(0 0 0 / 0.65); }"
+    },
+    {
+      "name": "Glass Button",
+      "kind": "button",
+      "refersTo": "button-glass",
+      "description": "Secondary pill in frosted glass beside the primary action.",
+      "html": "<a class=\"ds-btn ds-btn-glass\" href=\"#\">CouraLabs on GitHub</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 22px; border-radius: 999px; border: 1px solid transparent; font-family: var(--font); font-size: 1rem; font-weight: 500; line-height: 1.2; text-decoration: none; white-space: nowrap; cursor: pointer; transition: background-color 250ms var(--ease-out), translate 250ms var(--ease-out), box-shadow 250ms var(--ease-out); } .ds-btn svg { transition: translate 350ms var(--ease-out); } .ds-btn:hover svg { translate: 3px 0; } .ds-btn:focus-visible { outline: 2px solid var(--c-openmixing); outline-offset: 3px; } .ds-btn-glass { color: var(--text); background: var(--glass-bg); border-color: var(--glass-edge); box-shadow: inset 0 1px 0 var(--glass-top); backdrop-filter: blur(14px) saturate(150%); -webkit-backdrop-filter: blur(14px) saturate(150%); } .ds-btn-glass:hover { background: var(--glass-bg-strong); }"
+    },
+    {
+      "name": "Glass Nav",
+      "kind": "nav",
+      "refersTo": "nav-bar",
+      "description": "Fixed pill bar in glass with the three-primitive mark, pill links and circular tools.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-brand\" href=\"#\"><span class=\"ds-mark\"><svg viewBox=\"0 0 100 100\"><circle cx=\"50\" cy=\"50\" r=\"36\" fill=\"none\" stroke=\"var(--c-codeboros)\" stroke-width=\"16\" stroke-linecap=\"round\" pathLength=\"100\" stroke-dasharray=\"84 16\" transform=\"rotate(-62 50 50)\"/></svg><svg viewBox=\"0 0 100 100\"><circle cx=\"37\" cy=\"50\" r=\"29\" fill=\"var(--c-openmixing)\"/><circle cx=\"63\" cy=\"50\" r=\"29\" fill=\"var(--c-openmixing)\" fill-opacity=\"0.62\"/></svg><svg viewBox=\"0 0 100 100\" fill=\"var(--c-openhouse)\" stroke=\"var(--c-openhouse)\" stroke-width=\"4\" stroke-linejoin=\"round\"><path d=\"M50 10 L88 44 H12 Z\"/><rect x=\"22\" y=\"52\" width=\"56\" height=\"38\"/></svg></span>CouraLabs</a><span class=\"ds-links\"><a href=\"#\">Projects</a><a href=\"#\">About</a><a href=\"#\">Contact</a></span><button class=\"ds-tool\" type=\"button\">PT</button></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 58px; padding: 8px 8px 8px 20px; border-radius: 999px; color: var(--text); font-family: var(--font); background: var(--glass-bg); border: 1px solid var(--glass-edge); box-shadow: var(--glass-shadow), inset 0 1px 0 var(--glass-top); backdrop-filter: blur(20px) saturate(165%); -webkit-backdrop-filter: blur(20px) saturate(165%); } .ds-brand { display: inline-flex; align-items: center; gap: 12px; font-size: 1.12rem; font-weight: 600; letter-spacing: -0.01em; color: inherit; text-decoration: none; } .ds-mark { display: inline-flex; gap: 3px; } .ds-mark svg { width: 15px; height: 15px; transition: rotate 700ms var(--ease-out); } .ds-brand:hover .ds-mark svg:nth-child(1) { rotate: 180deg; } .ds-brand:hover .ds-mark svg:nth-child(2) { rotate: -90deg; } .ds-links { display: flex; gap: 2px; } .ds-links a { padding: 8px 16px; border-radius: 999px; color: var(--text-2); font-size: 0.98rem; font-weight: 500; text-decoration: none; transition: color 200ms var(--ease-out), background-color 200ms var(--ease-out); } .ds-links a:hover { color: var(--text); background: var(--line); } .ds-links a:focus-visible, .ds-tool:focus-visible { outline: 2px solid var(--c-openmixing); outline-offset: 3px; } .ds-tool { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--line); background: transparent; color: inherit; font: inherit; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.02em; cursor: pointer; transition: background-color 200ms var(--ease-out); } .ds-tool:hover { background: var(--line); }"
+    },
+    {
+      "name": "Glass Pane",
+      "kind": "card",
+      "refersTo": "glass-pane",
+      "description": "The frosted slab: every floating surface, with pointer-following specular.",
+      "html": "<div class=\"ds-pane\"><h3>Codeboros</h3><p>Self-hosted coding agent</p></div>",
+      "css": ".ds-pane { position: relative; max-width: 420px; padding: clamp(28px, 4vw, 52px); border-radius: 28px; color: var(--text); font-family: var(--font); background: var(--glass-bg); border: 1px solid var(--glass-edge); box-shadow: var(--glass-shadow), inset 0 1px 0 var(--glass-top); backdrop-filter: blur(var(--blur)) saturate(165%); -webkit-backdrop-filter: blur(var(--blur)) saturate(165%); } .ds-pane::before { content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; background: radial-gradient(460px circle at 22% -10%, var(--glass-spec), transparent 62%); } .ds-pane h3 { margin: 0; font-size: clamp(2.1rem, 3.6vw, 3rem); line-height: 1.05; font-weight: 500; letter-spacing: -0.032em; } .ds-pane p { margin: 8px 0 0; font-size: 1.15rem; color: var(--text-2); }"
+    },
+    {
+      "name": "Project Panel",
+      "kind": "card",
+      "refersTo": "glass-pane",
+      "description": "Glass pane tinted by its project hue, with status pill and diamond bullets.",
+      "html": "<div class=\"ds-panel\" style=\"--c: var(--c-codeboros)\"><p class=\"ds-status\"><span class=\"ds-dot\"></span>Pre-release: v1 is being built</p><ul class=\"ds-lines\"><li>Reviews your codebase on the schedule you set.</li><li>Reproduces a reported bug before it claims a fix.</li></ul></div>",
+      "css": ".ds-panel { padding: clamp(28px, 4vw, 52px); border-radius: 28px; color: var(--text); font-family: var(--font); border: 1px solid var(--glass-edge); box-shadow: var(--glass-shadow), inset 0 1px 0 var(--glass-top); background: linear-gradient(155deg, color-mix(in srgb, var(--c) 18%, transparent), transparent 62%), var(--glass-bg); backdrop-filter: blur(var(--blur)) saturate(165%); -webkit-backdrop-filter: blur(var(--blur)) saturate(165%); } .ds-status { display: inline-flex; align-items: center; gap: 10px; margin: 0; padding: 6px 14px 6px 12px; border-radius: 999px; border: 1px solid var(--line); font-size: 0.94rem; font-weight: 500; } .ds-dot { position: relative; width: 8px; height: 8px; border-radius: 50%; background: var(--c); } .ds-dot::after { content: ''; position: absolute; inset: 0; border-radius: 50%; border: 1.5px solid var(--c); animation: ds-ping 2.6s var(--ease-out) infinite; } @keyframes ds-ping { from { scale: 1; opacity: 0.9; } to { scale: 2.8; opacity: 0; } } .ds-lines { margin: 30px 0 0; padding: 0; list-style: none; display: grid; gap: 12px; } .ds-lines li { position: relative; padding-left: 28px; font-size: 1.06rem; } .ds-lines li::before { content: ''; position: absolute; left: 4px; top: 0.62em; width: 7px; height: 7px; background: var(--c); rotate: 45deg; }"
+    },
+    {
+      "name": "Project Tab",
+      "kind": "custom",
+      "refersTo": "project-tab-selected",
+      "description": "Tablist entry; selected becomes a Glass Strong card and its glyph regains colour and turns.",
+      "html": "<div class=\"ds-tabs\"><button class=\"ds-tab\" aria-selected=\"true\" type=\"button\"><svg class=\"ds-glyph\" viewBox=\"0 0 100 100\"><circle cx=\"37\" cy=\"50\" r=\"29\" fill=\"var(--c-openmixing)\"/><circle cx=\"63\" cy=\"50\" r=\"29\" fill=\"var(--c-openmixing)\" fill-opacity=\"0.62\"/></svg><span><span class=\"ds-tab-name\">OpenMixing</span><span class=\"ds-tab-kind\">MCP server that lets your agent DJ</span></span><kbd class=\"ds-key\">2</kbd></button><button class=\"ds-tab\" aria-selected=\"false\" type=\"button\"><svg class=\"ds-glyph\" viewBox=\"0 0 100 100\"><circle cx=\"50\" cy=\"50\" r=\"36\" fill=\"none\" stroke=\"var(--c-codeboros)\" stroke-width=\"16\" stroke-linecap=\"round\" pathLength=\"100\" stroke-dasharray=\"84 16\" transform=\"rotate(-62 50 50)\"/></svg><span><span class=\"ds-tab-name\">Codeboros</span><span class=\"ds-tab-kind\">Self-hosted coding agent</span></span><kbd class=\"ds-key\">1</kbd></button></div>",
+      "css": ".ds-tabs { display: flex; flex-direction: column; gap: 6px; max-width: 340px; font-family: var(--font); } .ds-tab { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; align-items: center; gap: 16px; width: 100%; padding: 18px 18px 18px 20px; border-radius: 22px; border: 1px solid transparent; background: transparent; color: var(--text); font: inherit; text-align: left; cursor: pointer; transition: background-color 400ms var(--ease-out), border-color 400ms var(--ease-out), box-shadow 400ms var(--ease-out); } .ds-tab:hover { background: color-mix(in srgb, var(--text) 4%, transparent); } .ds-tab:focus-visible { outline: 2px solid var(--c-openmixing); outline-offset: 3px; } .ds-tab[aria-selected='true'] { background: var(--glass-bg-strong); border-color: var(--glass-edge); box-shadow: 0 18px 40px -26px rgb(0 0 0 / 0.55), inset 0 1px 0 var(--glass-top); } .ds-glyph { width: 32px; height: 32px; filter: saturate(0.15); opacity: 0.55; transition: filter 500ms var(--ease-out), opacity 500ms var(--ease-out), rotate 900ms var(--ease-out); } .ds-tab[aria-selected='true'] .ds-glyph { filter: none; opacity: 1; rotate: 90deg; } .ds-tab > span { display: grid; gap: 2px; } .ds-tab-name { font-size: 1.3rem; font-weight: 500; letter-spacing: -0.015em; line-height: 1.25; } .ds-tab-kind { font-size: 0.94rem; color: var(--text-2); line-height: 1.35; } .ds-key { min-width: 26px; padding: 2px 7px; border-radius: 7px; border: 1px solid var(--line); color: var(--text-3); text-align: center; font-family: var(--mono); font-size: 0.78rem; }"
+    },
+    {
+      "name": "Project Index Row",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Hero index row: glyph, name, kind, ink-step badge, arrow; hover tints with the project hue.",
+      "html": "<a class=\"ds-row\" href=\"#\" style=\"--c: var(--c-openhouse); --ci: var(--c-openhouse-ink)\"><svg class=\"ds-row-glyph\" viewBox=\"0 0 100 100\" fill=\"var(--c-openhouse)\" stroke=\"var(--c-openhouse)\" stroke-width=\"4\" stroke-linejoin=\"round\"><path d=\"M50 10 L88 44 H12 Z\"/><rect x=\"22\" y=\"52\" width=\"56\" height=\"38\"/></svg><span class=\"ds-row-name\">OpenHouse</span><span class=\"ds-row-kind\">Household finance with shared books</span><span class=\"ds-row-badge\">Self-host today</span><svg width=\"18\" height=\"18\" viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"ds-row-arrow\" aria-hidden=\"true\"><path d=\"M4 10h12M11 5l5 5-5 5\"/></svg></a>",
+      "css": ".ds-row { display: grid; grid-template-columns: 26px auto minmax(0, 1fr) auto 18px; align-items: center; gap: 14px; max-width: 620px; padding: 14px 10px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); border-radius: 14px; color: var(--text); font-family: var(--font); text-decoration: none; transition: background-color 300ms var(--ease-out); } .ds-row:hover, .ds-row:focus-visible { background: color-mix(in srgb, var(--c) 9%, transparent); } .ds-row:focus-visible { outline: 2px solid var(--c-openmixing); outline-offset: 3px; } .ds-row-glyph { width: 24px; height: 24px; transition: scale 500ms var(--ease-out); } .ds-row:hover .ds-row-glyph { scale: 1.12; } .ds-row-name { font-size: 1.18rem; font-weight: 500; letter-spacing: -0.01em; } .ds-row-kind { color: var(--text-2); font-size: 0.98rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .ds-row-badge { font-size: 0.84rem; font-weight: 500; color: var(--ci); white-space: nowrap; } .ds-row-arrow { color: var(--text-3); transition: translate 400ms var(--ease-out), color 300ms var(--ease-out); } .ds-row:hover .ds-row-arrow { translate: 4px 0; color: var(--text); }"
+    },
+    {
+      "name": "Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Hairline pill for skills and tags.",
+      "html": "<ul class=\"ds-chips\"><li>React</li><li>Node.js</li><li>AI agents and tooling</li></ul>",
+      "css": ".ds-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; font-family: var(--font); color: var(--text); } .ds-chips li { padding: 8px 16px; border-radius: 999px; border: 1px solid var(--line); font-size: 0.98rem; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Lens Over Three Forms",
+    "overview": "Glass is a lens, not a finish. The whole system is a quiet ground carrying exactly three geometric primitives, one per project, with frosted panes set over them. Colour lives in the primitives; the glass shows it. A primitive read crisp outside a pane and blurred inside it is the system's single visual idea, and every surface either holds a pane, shows a primitive, or stays out of the way. Codeboros is a ring with a gap that slowly turns, OpenMixing two overlapping discs, OpenHouse a triangle roof over a square.\n\nDensity is low and the voice is calm: one humanist geometric sans (Jost) at medium weight for every voice, generous section spacing, pill controls, one hairline weight. Motion is slow and eased: primitives drift on 19 to 90 second loops, panes rise in over 1.3 seconds, and focusing a project glides its primitive under the glass while the pane tints toward its colour. The system ships in two equal themes, ink-blue dark and cool porcelain light, with the same primitives a step deeper in light.\n\nThe retired pixel/game world is the confirmed anti-reference: no pixel art, no game vocabulary, no stepped or bitmap rendering.",
+    "keyCharacteristics": [
+      "Three primitives, three hues, one per project; neutral UI everywhere else.",
+      "Frosted panes: translucent fill, 26px backdrop blur with 165% saturation, thin bright edge, inset top highlight, soft offset shadow, pointer-following specular.",
+      "Jost 500 for every heading and control; Geist Mono only for real commands and code.",
+      "Pills for controls (999px), 28px for panes, 1px hairlines only.",
+      "Dark and light themes are peers, switched by `data-theme`, defaulting to the OS."
+    ],
+    "rules": [
+      {
+        "name": "The Three Primitives Rule",
+        "body": "A project hue appears only attached to its project: its shape, its dot, its bullets, its badge, its pane tint. Neutral UI never borrows coral or mint; indigo's only exception is focus, selection and caret.",
+        "section": "colors"
+      },
+      {
+        "name": "The Lens Rule",
+        "body": "Panes are never filled with a solid project colour. A pane takes colour only by what sits behind it, plus at most an 18% project-colour gradient at 155deg fading out by 62%.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink Step Rule",
+        "body": "When a project hue is text, use its `-ink` step, never the base hue.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Voice Rule",
+        "body": "Jost speaks every role. Geist Mono appears only where the text is a real command, path or key (`code`, `kbd`).",
+        "section": "typography"
+      },
+      {
+        "name": "The Medium Ceiling Rule",
+        "body": "Headings and controls are weight 500. 600 is reserved for the wordmark and the two-letter tool buttons. Nothing is set in uppercase.",
+        "section": "typography"
+      },
+      {
+        "name": "The Frosted Slab Rule",
+        "body": "Anything that floats is glass: translucent fill, backdrop blur, 1px bright edge, inset top highlight, soft long shadow. There is no opaque floating card.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Specular Rule",
+        "body": "Panes carry a 460px radial highlight that follows the pointer (`--mx`, `--my`), fading out by 62%.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Roof Up Rule",
+        "body": "Wherever glyphs turn on hover or selection, the house never rotates.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "**Do** give every project exactly one primitive and one hue, and keep those pairings fixed (ring and coral, discs and indigo, house and mint).",
+      "**Do** let primitives cross pane edges so the lens reads: crisp outside, blurred inside.",
+      "**Do** build anything that floats as glass: glass fill, 1px glass edge, inset top highlight, pane shadow, 28px radius.",
+      "**Do** use pills (999px) for every control, chip and badge.",
+      "**Do** use the `-ink` step whenever a project hue is set as text.",
+      "**Do** ship both themes from the same tokens, switching with `data-theme`.",
+      "**Do** ease with cubic-bezier(0.16, 1, 0.3, 1) and keep motion slow; respect reduced motion."
+    ],
+    "donts": [
+      "**Don't** reintroduce the retired pixel/game world: no pixel art, bitmap fonts, stepped shapes or game vocabulary.",
+      "**Don't** fill a pane or a neutral control with a solid project colour.",
+      "**Don't** set Geist Mono on anything that is not a real command, path or key.",
+      "**Don't** use weights above 500 for headings, or uppercase tracked labels.",
+      "**Don't** use hard offset shadows or opaque floating cards.",
+      "**Don't** add a border heavier than 1px.",
+      "**Don't** rotate the house glyph."
+    ]
+  }
+}
