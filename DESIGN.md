@@ -1,310 +1,323 @@
 ---
 name: CouraLabs
-description: Three geometric primitives seen through a lens of frosted glass, in black and white.
+description: A drafting sheet for software, with hairline grid, plotted line primitives, and black and white ink in two peer themes.
 colors:
-  white-ink: "#f4f4f4"
-  codeboros-dark: "#ececec"
-  codeboros-hi-dark: "#ffffff"
-  openmixing-dark: "#a8a8a8"
-  openmixing-hi-dark: "#e2e2e2"
-  openhouse-dark: "#737373"
-  openhouse-hi-dark: "#b8b8b8"
-  codeboros-light: "#121212"
-  codeboros-hi-light: "#555555"
-  openmixing-light: "#5c5c5c"
-  openmixing-hi-light: "#a3a3a3"
-  openhouse-light: "#8c8c8c"
-  openhouse-hi-light: "#c8c8c8"
-  ink-ground: "#0a0a0a"
-  ink-ground-raised: "#131313"
-  ink-text: "#f4f4f4"
-  ink-text-muted: "#b3b3b3"
-  ink-text-faint: "#8f8f8f"
-  ink-hairline: "rgb(244 244 244 / 0.12)"
-  ink-glass: "rgb(30 30 30 / 0.42)"
-  ink-glass-strong: "rgb(30 30 30 / 0.66)"
-  ink-glass-edge: "rgb(255 255 255 / 0.14)"
-  wordmark-soft-dark: "#a3a3a3"
-  white-ground: "#f2f2f2"
-  white-ground-raised: "#e7e7e7"
-  black-ink: "#0a0a0a"
-  white-text-muted: "#444444"
-  white-text-faint: "#5e5e5e"
-  white-hairline: "rgb(10 10 10 / 0.12)"
-  white-glass: "rgb(255 255 255 / 0.46)"
-  white-glass-strong: "rgb(255 255 255 / 0.7)"
-  white-glass-edge: "rgb(255 255 255 / 0.8)"
-  wordmark-soft-light: "#686868"
+  sheet-black: "#0a0a0a"
+  sheet-black-raised: "#111111"
+  sheet-black-lift: "#181818"
+  white-ink: "#f2f2f0"
+  white-ink-2: "#b0b0ad"
+  white-ink-3: "#8a8a87"
+  white-hairline: "rgb(242 242 240 / 0.12)"
+  white-hairline-strong: "rgb(242 242 240 / 0.22)"
+  white-bloom: "rgb(200 205 198 / 0.13)"
+  white-bloom-edge: "rgb(255 255 255 / 0.05)"
+  black-nav-glass: "rgb(10 10 10 / 0.62)"
+  white-button-hover: "#ffffff"
+  wordmark-soft-dark: "#a0a09d"
+  paper-white: "#f2f2f0"
+  paper-raised: "#e9e9e6"
+  paper-lift: "#e0e0dc"
+  graphite-ink: "#0c0c0c"
+  graphite-ink-2: "#464644"
+  graphite-ink-3: "#62625f"
+  graphite-hairline: "rgb(12 12 12 / 0.13)"
+  graphite-hairline-strong: "rgb(12 12 12 / 0.24)"
+  graphite-bloom: "rgb(24 26 24 / 0.2)"
+  graphite-bloom-edge: "rgb(0 0 0 / 0.075)"
+  paper-nav-glass: "rgb(242 242 240 / 0.7)"
+  graphite-button-hover: "#2a2a2a"
+  wordmark-soft-light: "#666663"
 typography:
   display:
-    fontFamily: "Jost Variable, Jost, ui-sans-serif, system-ui, sans-serif"
-    fontSize: "clamp(2.6rem, 5.4vw, 4.9rem)"
+    fontFamily: "Geist Mono Variable, ui-monospace, SF Mono, Menlo, monospace"
+    fontSize: "clamp(2.2rem, 5.7vw, 5.1rem)"
     fontWeight: 500
     lineHeight: 1.02
-    letterSpacing: "-0.035em"
+    letterSpacing: "-0.045em"
   headline:
-    fontFamily: "Jost Variable, Jost, ui-sans-serif, system-ui, sans-serif"
-    fontSize: "clamp(2.3rem, 4.2vw, 3.6rem)"
+    fontFamily: "Geist Mono Variable, ui-monospace, SF Mono, Menlo, monospace"
+    fontSize: "clamp(2.8rem, 8vw, 6rem)"
     fontWeight: 500
-    lineHeight: 1.05
-    letterSpacing: "-0.032em"
+    lineHeight: 0.95
+    letterSpacing: "-0.05em"
   title:
-    fontFamily: "Jost Variable, Jost, ui-sans-serif, system-ui, sans-serif"
-    fontSize: "clamp(2.1rem, 3.6vw, 3rem)"
+    fontFamily: "Geist Mono Variable, ui-monospace, SF Mono, Menlo, monospace"
+    fontSize: "clamp(2rem, 3.8vw, 3.2rem)"
     fontWeight: 500
-    lineHeight: 1.05
-    letterSpacing: "-0.032em"
-  title-sm:
-    fontFamily: "Jost Variable, Jost, ui-sans-serif, system-ui, sans-serif"
-    fontSize: "1.3rem"
+    lineHeight: 1
+    letterSpacing: "-0.045em"
+  name:
+    fontFamily: "Geist Mono Variable, ui-monospace, SF Mono, Menlo, monospace"
+    fontSize: "1.1rem"
     fontWeight: 500
-    lineHeight: 1.25
-    letterSpacing: "-0.015em"
-  lead:
-    fontFamily: "Jost Variable, Jost, ui-sans-serif, system-ui, sans-serif"
-    fontSize: "1.125rem"
-    fontWeight: 400
-    lineHeight: 1.6
+    letterSpacing: "-0.02em"
   body:
     fontFamily: "Jost Variable, Jost, ui-sans-serif, system-ui, sans-serif"
     fontSize: "1.0625rem"
     fontWeight: 400
     lineHeight: 1.6
-  control:
+  body-lead:
+    fontFamily: "Jost Variable, Jost, ui-sans-serif, system-ui, sans-serif"
+    fontSize: "1.1rem"
+    fontWeight: 400
+    lineHeight: 1.6
+  button:
     fontFamily: "Jost Variable, Jost, ui-sans-serif, system-ui, sans-serif"
     fontSize: "1rem"
     fontWeight: 500
-    lineHeight: 1.2
   label:
-    fontFamily: "Jost Variable, Jost, ui-sans-serif, system-ui, sans-serif"
-    fontSize: "0.86rem"
-    fontWeight: 500
-    lineHeight: 1.6
-  mono:
     fontFamily: "Geist Mono Variable, ui-monospace, SF Mono, Menlo, monospace"
-    fontSize: "0.86em"
+    fontSize: "0.78rem"
     fontWeight: 400
-    fontFeature: "tnum"
+  dot-note:
+    fontFamily: "Doto Variable, Doto, Geist Mono Variable, ui-monospace, monospace"
+    fontSize: "1.02rem"
+    fontWeight: 700
+    lineHeight: 1.45
+    letterSpacing: "0.14em"
+  dot-sign:
+    fontFamily: "Doto Variable, Doto, Geist Mono Variable, ui-monospace, monospace"
+    fontSize: "clamp(3.2rem, 16vw, 14rem)"
+    fontWeight: 700
+    lineHeight: 0.82
+    letterSpacing: "-0.02em"
 rounded:
-  key: "7px"
-  row: "14px"
-  tab: "22px"
-  pane: "28px"
-  pill: "999px"
+  ctl: "999px"
+  panel: "20px"
+  tab: "16px"
+  inset: "14px"
+  key: "6px"
 spacing:
-  gutter: "clamp(20px, 5vw, 72px)"
-  pane-padding: "clamp(28px, 4vw, 52px)"
-  section-top: "clamp(104px, 13vw, 176px)"
-  section-head-gap: "clamp(36px, 5vw, 56px)"
-  column-gap: "clamp(24px, 4vw, 64px)"
-  actions-gap: "12px"
-  container-max: "1240px"
+  pad: "clamp(20px, 4.4vw, 64px)"
+  gutter: "clamp(20px, 2.4vw, 32px)"
+  panel-pad: "clamp(24px, 3.6vw, 44px)"
+  max: "1320px"
+  nav-h: "64px"
+  split: "clamp(280px, 31%, 410px)"
+  action-gap: "12px"
+  tab-gap: "6px"
 components:
   button-primary:
-    backgroundColor: "{colors.ink-text}"
-    textColor: "{colors.ink-ground}"
-    typography: "{typography.control}"
-    rounded: "{rounded.pill}"
-    padding: "0 22px"
-    height: "48px"
+    backgroundColor: "{colors.white-ink}"
+    textColor: "{colors.sheet-black}"
+    typography: "{typography.button}"
+    rounded: "{rounded.ctl}"
+    padding: "0 24px"
+    height: "46px"
   button-primary-hover:
-    backgroundColor: "#ffffff"
-  button-primary-light:
-    backgroundColor: "{colors.black-ink}"
-    textColor: "#f4f5f9"
-  button-primary-light-hover:
-    backgroundColor: "#262a3a"
-  button-glass:
-    backgroundColor: "{colors.ink-glass}"
-    textColor: "{colors.ink-text}"
-    typography: "{typography.control}"
-    rounded: "{rounded.pill}"
+    backgroundColor: "{colors.white-button-hover}"
+  button-primary-disc:
+    backgroundColor: "{colors.white-ink}"
+    textColor: "{colors.sheet-black}"
+    rounded: "{rounded.ctl}"
+    size: "46px"
+  button-pill:
+    backgroundColor: "transparent"
+    textColor: "{colors.white-ink}"
+    typography: "{typography.button}"
+    rounded: "{rounded.ctl}"
     padding: "0 22px"
-    height: "48px"
-  button-glass-hover:
-    backgroundColor: "{colors.ink-glass-strong}"
-  glass-pane:
-    backgroundColor: "{colors.ink-glass}"
-    rounded: "{rounded.pane}"
-    padding: "{spacing.pane-padding}"
-  nav-bar:
-    backgroundColor: "{colors.ink-glass}"
-    rounded: "{rounded.pill}"
-    padding: "8px 8px 8px 20px"
-    height: "58px"
+    height: "46px"
+  button-pill-hover:
+    backgroundColor: "{colors.white-ink}"
+    textColor: "{colors.sheet-black}"
+  button-pill-sm:
+    textColor: "{colors.white-ink-2}"
+    rounded: "{rounded.ctl}"
+    padding: "0 14px"
+    height: "34px"
+  tag:
+    backgroundColor: "transparent"
+    textColor: "{colors.white-ink-2}"
+    typography: "{typography.label}"
+    rounded: "{rounded.ctl}"
+    padding: "3px 12px"
+  tool:
+    backgroundColor: "transparent"
+    textColor: "{colors.white-ink}"
+    rounded: "{rounded.ctl}"
+    size: "38px"
   nav-link:
-    textColor: "{colors.ink-text-muted}"
-    rounded: "{rounded.pill}"
-    padding: "8px 16px"
+    textColor: "{colors.white-ink-2}"
+    rounded: "{rounded.ctl}"
+    padding: "7px 12px"
   nav-link-hover:
-    backgroundColor: "{colors.ink-hairline}"
-    textColor: "{colors.ink-text}"
-  tool-button:
-    rounded: "{rounded.pill}"
-    size: "42px"
-  project-tab:
+    backgroundColor: "{colors.sheet-black-lift}"
+    textColor: "{colors.white-ink}"
+  ledger-row:
+    backgroundColor: "{colors.sheet-black}"
+    textColor: "{colors.white-ink}"
+    padding: "12px clamp(20px, 4.4vw, 64px)"
+    height: "64px"
+  ledger-row-hover:
+    backgroundColor: "{colors.white-ink}"
+    textColor: "{colors.sheet-black}"
+  tab:
+    backgroundColor: "{colors.sheet-black}"
+    textColor: "{colors.white-ink}"
     rounded: "{rounded.tab}"
-    padding: "18px 18px 18px 20px"
-  project-tab-selected:
-    backgroundColor: "{colors.ink-glass-strong}"
-  chip:
-    textColor: "{colors.ink-text}"
-    rounded: "{rounded.pill}"
-    padding: "8px 16px"
-  status-pill:
-    rounded: "{rounded.pill}"
-    padding: "6px 14px 6px 12px"
-  key-cap:
-    textColor: "{colors.ink-text-faint}"
-    rounded: "{rounded.key}"
-    padding: "2px 7px"
+    padding: "16px 18px"
+  tab-selected:
+    backgroundColor: "{colors.white-ink}"
+    textColor: "{colors.sheet-black}"
+  panel:
+    backgroundColor: "{colors.sheet-black-raised}"
+    textColor: "{colors.white-ink}"
+    rounded: "{rounded.panel}"
+    padding: "clamp(24px, 3.6vw, 44px)"
+  run-block:
+    backgroundColor: "{colors.sheet-black}"
+    rounded: "{rounded.inset}"
+    padding: "14px 16px"
 ---
 
 # Design System: CouraLabs
 
 ## Overview
 
-**Creative North Star: "The Lens Over Three Forms"**
+**Creative North Star: "The Drafting Sheet"**
 
-Glass is a lens, not a finish. The whole system is a quiet ground carrying exactly three geometric primitives, one per project, with frosted panes set over them. Tone lives in the primitives; the glass shows it. A primitive read crisp outside a pane and blurred inside it is the system's single visual idea, and every surface either holds a pane, shows a primitive, or stays out of the way. Codeboros is a ring with a gap that slowly turns, OpenMixing two overlapping discs, OpenHouse a triangle roof over a square.
+The page is one visible sheet of technical drawing paper. A hairline frame runs its full height, every section is a cell ruled off that frame, and crosshair ticks mark each place where two rules meet. On that sheet each project is a line drawing, plotted stroke by stroke rather than rendered: a broken ring, two overlapping circles (the second dotted), a roof over a square. One bright node dot travels a hairline orbit in the hero, and a faint gray bloom of light sits behind it. Nothing is filled except node dots and the inverted states.
 
-Density is low and the voice is calm: one humanist geometric sans (Jost) at medium weight for every voice, generous section spacing, pill controls, one hairline weight. Motion is slow and eased: primitives drift on 19 to 90 second loops, panes rise in over 1.3 seconds, and focusing a project glides its primitive under the glass while the pane tints toward its colour. The system ships in two equal themes, black and white, with the same primitives a step deeper in light.
+The ink is strictly black, white and near-neutral gray. Dark (black sheet, white ink) and light (paper-white sheet, graphite ink) are peers. Neither is a fallback: the OS setting picks one before first paint, a `data-theme` attribute holds it, and the switch opens the new theme as a circular View Transition from the button that was pressed. The voice is Geist Mono, set large and tight, with Jost for reading and Doto dot-matrix kept to the hero corner note. Density is calm. Large mono headlines and wide cells sit against compact, tabular rows.
 
-The retired pixel/game world is the confirmed anti-reference: no pixel art, no game vocabulary, no stepped or bitmap rendering.
+Two earlier worlds are confirmed anti-references: the frosted-glass lens over three filled primitives, and the older pixel world before it. Glass survives in exactly one place, the sticky nav.
 
 **Key Characteristics:**
-- Three primitives, three gray tones, one per project; the whole interface is black and white.
-- Frosted panes: translucent fill, 26px backdrop blur with 165% saturation, thin bright edge, inset top highlight, soft offset shadow, pointer-following specular.
-- Jost 500 for every heading and control; Geist Mono only for real commands and code.
-- Pills for controls (999px), 28px for panes, 1px hairlines only.
-- Dark and light themes are peers, switched by `data-theme`, defaulting to the OS. The switch opens the new theme as a circle from the pressed button (View Transitions, off under reduced motion).
+- One hairline frame (1px side rails, max 1320px) with ruled cells and 13px crosshair ticks at every rule intersection; the ticked rules run on to the window edges.
+- A shared column rule (`--split`) that runs through the projects and about cells, ticked where it meets the cell rules.
+- Line-drawn primitives plotted by stroke-dashoffset on a normalised path length, each with a filled node dot.
+- Black, white and neutral gray only, in two peer themes.
+- Inversion as the interaction grammar: rows, tabs, pills and tools flip to text colour on the ground.
+- Geist Mono 500 with negative tracking as the display voice.
 
 ## Colors
 
-Strictly black and white. The ground and ink swap with the theme; every project primitive is a tone of gray, told apart by form and by lightness, never by hue.
+A monochrome ink-on-sheet palette. The only "colour" is the gap between ground and ink, plus hairlines drawn as translucent ink.
+
+### Primary
+- **White Ink / Graphite Ink** (`white-ink` dark, `graphite-ink` light): text, primitive strokes, node dots, the primary button fill, and the inverted state of every row, tab and pill. Ink is the accent, so there is no other.
 
 ### Neutral
-- **Ink Ground** (ink-ground, #0a0a0a) in dark and **White Ground** (white-ground, #f2f2f2) in light; each has a raised second step.
-- **Text, Muted, Faint**: white-ink on black, black-ink on white, with true-gray secondary steps. No tint in any gray.
-- **Hairline**: text colour at 12% alpha, the only divider and outline colour.
-- **Glass, Glass Strong, Glass Edge**: neutral translucent fills and the 1px bright rim.
-
-### Primitive tones
-Each project keeps a base tone and a lighter `-hi` step for the shaded gradient on background-scale shapes. Codeboros is the strongest tone (white in dark, near-black in light), OpenMixing the middle, OpenHouse the quietest. In text, project tones resolve to the `-ink` step.
-
-### Wordmark
-"Coura" is set in the soft gray (wordmark-soft) at weight 500; "Labs" is full text colour at 600, so it reads white on the black theme and black on the white theme.
+- **Sheet Black / Paper White** (`sheet-black`, `paper-white`): the page ground, and the ground under the hero's dot grid.
+- **Raised / Lift grounds** (`sheet-black-raised`, `sheet-black-lift`; `paper-raised`, `paper-lift`): the project panel surface (raised), tab hover (raised) and nav-link hover (lift). These two steps are the only tonal layers.
+- **Ink 2** (`white-ink-2`, `graphite-ink-2`): secondary copy, sub lines, kinds, tag text, the Doto corner note.
+- **Ink 3** (`white-ink-3`, `graphite-ink-3`): crosshair ticks, mono labels (`dt`, path bar, figcaption), the `$` prompt, orbit ticks and dotted rings.
+- **Hairline / Hairline Strong** (`white-hairline`, `white-hairline-strong`; graphite equivalents): `line` for frame rails, cell rules, row dividers and arcs; `line-2` for control outlines (pills, tags, tools, keys, panel edge) and the orbit ring.
+- **Bloom** (`white-bloom` to `white-bloom-edge`; graphite equivalents): the hero's radial light, blurred 12px and drifting over 26s.
+- **Nav Glass** (`black-nav-glass`, `paper-nav-glass`): the sticky nav fill under its backdrop blur.
+- **Wordmark Soft** (`wordmark-soft-dark`, `wordmark-soft-light`): "Coura" in the wordmark, set back from full-ink "Labs".
 
 ### Named Rules
-**The Two Colours Rule.** The interface is black and white. Focus rings, selection and the caret use the text colour; selection inverts to text-on-ground. No hue is introduced anywhere, including status dots.
+**The Ink-Only Rule.** No hue enters the system. Every value is black, white, or a gray within a few points of neutral. Project identity comes from the primitive's drawing, never from a colour.
 
-**The Lens Rule.** Panes are never filled solid. They take tone from what sits behind them, plus the faint project-tone sheen.
+**The Peer Themes Rule.** Every token has a dark and a light value, and both are designed. A new surface is not done until it reads correctly in both.
 
 ## Typography
 
-**Display Font:** Jost Variable (with Jost, ui-sans-serif, system-ui)
-**Body Font:** Jost Variable (same stack)
-**Label/Mono Font:** Geist Mono Variable (with ui-monospace, SF Mono, Menlo), code and key commands only
+**Display Font:** Geist Mono Variable (with ui-monospace, SF Mono, Menlo)
+**Body Font:** Jost Variable (with ui-sans-serif, system-ui)
+**Dot-matrix Font:** Doto Variable (with Geist Mono Variable)
 
-**Character:** One geometric humanist voice from headline to footnote; hierarchy comes from size and tight negative tracking, not from changing family or shouting weight.
+**Character:** An engineer's mono drawn large and tight, set against a geometric sans that stays quiet for reading. The dot-matrix face is a stamp, not a voice.
 
 ### Hierarchy
-- **Display** (500, clamp(2.6rem, 5.4vw, 4.9rem), 1.02, -0.035em): the hero headline, balanced, capped at 12.5ch. The person's name in About and the contact headline sit on the same tier (clamp to 4.1rem and 4.4rem). On mobile the hero drops to clamp(2.2rem, 9.6vw, 2.8rem).
-- **Headline** (500, clamp(2.3rem, 4.2vw, 3.6rem), 1.05, -0.032em): section titles.
-- **Title** (500, clamp(2.1rem, 3.6vw, 3rem), 1.05, -0.032em): the project name inside the stage pane.
-- **Title Small** (500, 1.3rem, 1.25, -0.015em): project names in the list; 1.18rem in the hero index.
-- **Lead** (400, 1.125rem, 1.6): section and hero subcopy in muted text, 44 to 52ch, `text-wrap: pretty`.
-- **Body** (400, 1.0625rem, 1.6): running copy, max 60 to 62ch.
-- **Control** (500, 1rem, 1.2): buttons; nav links at 0.98rem.
-- **Label** (500, 0.86rem): fact terms and list titles, sentence case, in faint text.
+- **Display** (Geist Mono 500, clamp(2.2rem, 5.7vw, 5.1rem), 1.02, -0.045em): the hero headline, split into two lines with line one left and line two right across the frame. Each line rises from a clip on load. Below 720px both lines align left at clamp(1.9rem, 8.6vw, 2.8rem).
+- **Headline** (Geist Mono 500, clamp(2.8rem, 8vw, 6rem), 0.95, -0.05em): section titles written as paths (`/projects`) and the contact heading. The about name uses the same voice at clamp(2.4rem, 4.3vw, 4rem).
+- **Title** (Geist Mono 500, clamp(2rem, 3.8vw, 3.2rem), 1, -0.045em): the project name inside the panel.
+- **Name** (Geist Mono 500, 1.08 to 1.1rem, -0.02em): project names on site sheets and tabs.
+- **Body** (Jost 400, 1.0625rem, 1.6): running copy. Leads and sub copy step to 1.1 to 1.14rem in Ink 2, capped at 42 to 62ch and wrapped with `pretty`.
+- **Button** (Jost 500, 1rem): every pill and CTA label.
+- **Label** (Geist Mono 400, 0.74 to 0.86rem): nav links, tags, status, path bar, fact terms, `kbd` keys, code. Tabular numerals on code and keys.
+- **Dot note** (Doto 700, 1.02rem, 1.45, 0.14em, uppercase): the hero corner note only, three short stacked lines in Ink 2 closed by a 16px rule. Decorative (`aria-hidden`) and hidden below 900px.
 
 ### Named Rules
-**The One Voice Rule.** Jost speaks every role. Geist Mono appears only where the text is a real command, path or key (`code`, `kbd`).
+**The Mono Voice Rule.** Anything that names something (a headline, a project, a section, a key) is Geist Mono 500 with negative tracking. Jost reads, and it never names.
 
-**The Medium Ceiling Rule.** Headings and controls are weight 500. 600 is reserved for the wordmark and the two-letter tool buttons. Nothing is set in uppercase.
+**The One Stamp Rule.** Doto appears in exactly one place: the hero corner note. It is never used for headings, labels, or body copy.
 
 ## Layout
 
-Content sits in a 1240px container with a fluid gutter (clamp(20px, 5vw, 72px)). Sections open with large fluid top padding (clamp(104px, 13vw, 176px)) and a heading block capped at 640px. Two-column sections use an asymmetric grid, a narrow left column (minmax(260px, 0.78fr)) against a wide right (1.6fr), with a fluid column gap; the project list in the left column is sticky at 108px.
+The sheet is a centred frame, `max` 1320px wide, with 1px `line` side rails. The nav repeats the rails in its inner bar so the frame runs unbroken under the glass, with crosshairs where its bottom rule meets them. Every section is a cell: padding `pad` (clamp(20px, 4.4vw, 64px)) and a 1px top rule, with a 13px crosshair centred on each end of the rule. The first cell carries its crosshairs on its bottom edge instead.
 
-The hero is a full-viewport (100svh) field: primitives positioned absolutely by viewport units at large scale behind a single glass slab (max 700px) aligned to the container's left edge. The contact section repeats the field-and-slab pattern, centred. Primitives must cross pane edges so they read crisp outside and blurred inside.
+Sub-rules that run frame to frame use a negative `pad` margin to reach the rails and carry their own crosshairs. This applies to the projects body rule. A shared column rule at `split` (clamp(280px, 31%, 410px)) divides the projects cell (tabs | panel) and the about cell (identity | text), with a crosshair where it meets each top rule. Thin outline circles (`.arc`, 1px `line`) cross cell edges and are clipped by an inner layer, never by the cell itself, so its crosshairs stay visible.
 
-Breakpoints: at 1100px the field recomposes; at 900px two-column grids stack and the project list becomes a three-up row of name-only tabs; at 720px the hero aligns to the top with the primitives clustered above the slab, the index row folds its description onto a second line and fact grids go single column; at 480px action buttons stretch to fill.
+Every rule that meets the frame at a crosshair (cell top rules, the projects body rule) runs on past the rails to the window edges, drawn with `border-image` outset by 100vw. The sheet reads as a cut-out of an endless drawing, not a box. Row dividers inside a cell stop at the rails.
+
+The hero fills the viewport below the nav on a two-column grid. Its rows are the corner note (top right), a flexible gap, the split headline, then the sub copy and actions under line one. The orbit sits right of centre; the project sites land on free grid dots around it, most often in the open top-left. Rhythm comes from clamp() values, not a fixed scale: `gutter` (clamp(20px, 2.4vw, 32px)) for inner column padding, `panel-pad` for panel interiors, 12px between actions, 6px between tabs.
+
+Breakpoints: 1100px narrows the orbit. 900px stacks the hero (orbit moves above the headline, the corner note hides), stacks projects (tabs become three equal columns showing glyph and name only, the column rule and big tabs drawing hide) and stacks about. 720px hides nav links, left-aligns both headline lines, and stacks facts and the about ledger. At 480px the hero actions go full width. At 420px the nav theme tool hides (the footer still has a theme pill).
+
+### Named Rules
+**The Ticked Intersection Rule.** Wherever a horizontal rule meets the frame or the column rule, a 13px Ink 3 crosshair marks it. A new rule that spans the sheet gets its ticks.
+
+**The One Column Rule.** Two-column cells divide at `split` so their dividers line up down the sheet. Don't invent a second column position.
 
 ## Elevation & Depth
 
-Depth is material, not stacked cards: a flat ground, primitives at the back, and frosted glass in front. A pane earns its lift from translucency, backdrop blur, a bright 1px rim, an inset top highlight and a long, soft, downward shadow. Shadows are always soft and offset downward with negative spread; there is no hard offset shadow.
-
-### Shadow Vocabulary
-- **Pane shadow, dark** (`box-shadow: 0 30px 70px -30px rgb(0 0 0 / 0.7), 0 2px 10px -4px rgb(0 0 0 / 0.4)`): every glass slab, panel and the nav.
-- **Pane shadow, light** (`box-shadow: 0 30px 70px -34px rgb(0 0 0 / 0.38), 0 2px 10px -4px rgb(0 0 0 / 0.14)`): the same, neutral black for white.
-- **Glass rim** (`box-shadow: inset 0 1px 0 var(--glass-top)`): top highlight on panes, glass buttons and selected tabs.
-- **Primary button** (`box-shadow: 0 10px 24px -14px rgb(0 0 0 / 0.6)`, deepening on hover): the solid action's small lift.
+The sheet is flat. Depth comes from three things only: two tonal steps (raised panel, lifted hover), hairline outlines in two strengths, and the hero bloom behind the orbit. There are no drop shadows. The only `box-shadow` in the system is a 1px inset hairline that outlines the ghost CTA. The one translucent material is the sticky nav: nav-glass fill with `backdrop-filter: blur(18px) saturate(140%)`.
 
 ### Named Rules
-**The Frosted Slab Rule.** Anything that floats is glass: translucent fill, backdrop blur, 1px bright edge, inset top highlight, soft long shadow. There is no opaque floating card.
+**The One Pane Rule.** Glass exists only on the sticky nav. Panels, cards, tabs and overlays are opaque ground with a hairline edge.
 
-**The Specular Rule.** Panes carry a 460px radial highlight that follows the pointer (`--mx`, `--my`), fading out by 62%.
+**The Drawn Depth Rule.** If something needs to separate from the sheet, outline it or step its ground one tone. Never lift it with a shadow.
 
 ## Shapes
 
-Two radii carry the system: pills (999px) for every control, chip, badge, nav bar and status, and 28px for every pane. Intermediate radii are reserved for nested rows: 22px for project tabs (18px on narrow screens), 14px for hover rows in the hero index, 7px for key caps and inline code. Borders are always 1px, either hairline or glass edge.
+There are two families: hairline geometry drawn on the sheet, and fully rounded controls set on top of it.
 
-The three primitives are the system's geometry and are drawn on a 100-unit box: a ring (r36, stroke 16, round caps, an 84/16 dash) rotated -62deg, two r29 discs with the right one at 62% opacity, and a roof triangle over a square with 4-unit rounded joins. At background scale they take a 155deg gradient from the `-hi` step to the base tone; as glyphs they are flat. List bullets are 7px squares rotated 45deg, filled with the project tone.
-
-**The Roof Up Rule.** Wherever glyphs turn on hover or selection, the house never rotates.
+- **Primitives.** Stroked line drawings in a 100-unit box with round caps and joins and non-scaling strokes (1 to 1.5px). Codeboros is a ring with a gap and a node at its open end. OpenMixing is two overlapping circles, the second dotted (`stroke-dasharray: 0 0.026` at 1.9x width). OpenHouse is a roof over a square. Every stroke carries `pathLength="1"` and plots in by animating `stroke-dashoffset` from 1 to 0 (1500ms, second stroke 380ms later). The node dot and dotted trace then arrive by scaling up from 0.4. They appear at glyph size (26px), as the tab drawing, in the panel, and inside the hero orbit.
+- **Orbit.** A hairline ring (`line-2`) plotted over 2400ms, a dotted inner ring counter-spinning over 160s, four short axis ticks, and a 5px node dot. The node sweeps 76 to 126deg (14s, alternate) on desktop so it stays clear of the headline. Below 900px, where the orbit sits alone above the headline, it spins the full ring over 40s.
+- **Circles.** Outline arcs crossing cell edges, the contact pair of rings with a masked dotted trace and node, and hollow 7px bullet rings on line lists.
+- **Corners.** Controls are fully round (`ctl`, 999px): pills, CTA labels and discs, tags, tools, status, copy button. Containers step down in radius: panel 20px, tab 16px, facts grid and run block 14px, `kbd` keys and focus rings 6px.
 
 ## Components
 
 ### Buttons
-Calm, solid or glass, always pill.
-- **Shape:** full pill (999px), 48px tall, 22px side padding, 10px gap to a trailing 18px arrow.
-- **Primary:** a solid inverse of the theme, text colour as fill with ground-coloured label, with a small soft shadow. Hover lifts 1px, brightens and deepens the shadow; the arrow slides 3px right.
-- **Glass:** glass fill with glass-edge border, rim highlight and a lighter 14px backdrop blur; hover moves to Glass Strong.
-- **Disabled:** glass button in muted text with `not-allowed`, carrying a small hairline "soon" pill.
-- **Text link button:** muted text whose underline fades in on hover (footer tools).
+Two shapes for action, one pressed together, and one outlined.
+- **CTA (primary):** a pill label (46px tall, 0 24px, Jost 500 1rem) and a separate 46px round disc holding an arrow, set 4px apart and filled with ink on the ground. On hover both brighten to the button-hover value and the disc rotates -45deg (450ms, ease-out), so the arrow points up and out.
+- **CTA ghost:** the same pair, transparent, outlined by a 1px inset `line-2` hairline. On hover it inverts to ink on ground.
+- **Pill (secondary):** a 46px hairline pill (1px `line-2`, 0 22px). On hover it inverts to text colour on the ground. The small pill (34px, 0 14px, 0.9rem, Ink 2) carries footer links and toggles.
+- **Tool:** a 38px circular hairline button with a mono label or an 18px inline SVG icon (language, theme). It inverts on hover.
+- **Focus:** a 2px text-colour outline at 3px offset, radius 6px, everywhere.
 
 ### Chips
-- **Style:** transparent with 1px hairline border, pill, 8px 16px, 0.98rem (skills list).
-- **Status pill:** the same hairline pill at 0.94rem/500 led by an 8px dot in the project tone with a slow 2.6s ping ring.
+- **Tag:** a mono 0.78 to 0.82rem hairline pill (`line-2`), used for project status on site sheets and the skills list. It is not interactive.
+- **Status:** a mono hairline pill with a 6px ink dot whose ring pings outward every 2.6s, in the panel bar.
 
 ### Cards / Containers
-- **Corner Style:** 28px.
-- **Background:** Glass; the project panel layers an 12% project-tone gradient over it.
-- **Shadow Strategy:** pane shadow plus rim (see Elevation & Depth).
-- **Border:** 1px glass edge.
-- **Internal Padding:** clamp(28px, 4vw, 52px); contact pane clamp(36px, 5vw, 64px).
-- **Facts:** a three-column definition grid under a hairline, faint 0.86rem terms over 1rem values; single column on mobile.
+- **Project panel:** 20px radius, raised ground, 1px `line-2` edge, no shadow. A path bar (mono repo path in Ink 3, status pill) sits over the body. The body holds the large primitive top right, the mono title, a line list with hairline dividers and hollow ring bullets, a three-column facts grid (14px, hairline cells, mono `dt`), a run block, and actions.
+- **Run block:** 14px radius, ground fill, hairline edge. A mono figcaption has a hairline copy pill, then a `pre` where each line is prefixed by a non-selectable Ink 3 `$ `.
 
 ### Navigation
-- **Style:** a fixed glass pill bar 14px from the top, 58px tall, inside the container width; it shifts to Glass Strong once the page scrolls.
-- **Brand:** the CL monogram, a faceted C with an L standing in its opening and running out to the right (a filled shape traced from the supplied logo) plus the two-tone wordmark at 1.16rem. The monogram slides in at load (C from the left, L from below); on hover the L lifts and settles once while the C stays put. The same monogram ships as favicon.svg and logo.svg, both following the OS colour scheme.
-- **Links:** muted pills (8px 16px) that take a hairline fill and full text colour on hover.
-- **Tools:** 42px circular hairline buttons for language and theme; the theme button is dropped under 420px (the footer carries both).
+A sticky 64px glass bar with a hairline bottom rule and the frame rails. On the left are the CL monogram (24px, its C and L slide in on load, and the L lifts once per hover) and the wordmark ("Coura" soft at 500, "Labs" full ink at 600, Jost). In the centre are mono path links (`/projects`) in Ink 2, which take a lifted pill ground on hover. On the right are the language and theme tools. Links hide at 720px.
 
-### Project Index (signature)
-The hero list of projects: a 24px flat glyph, name, kind, ink-step status badge and arrow per row, divided by hairlines. Hover or focus tints the row with 9% of the project tone, turns the glyph 90deg and scales it 1.12, slides the arrow 4px, and glides that project's primitive under the hero glass while the other two fade to 32%.
+### Project Sites (signature)
+The hero has no project list. Each project is a site on the plotter grid: on every page load it lands on a random free grid dot (seeded once per visit, confined to the open sheet above the headline: left of the corner note and clear of the orbit on the wide layout, and around the orbit's drawing when stacked; spread at least 260px apart where the sheet allows). Its entrance is a dot that swells and gives way to the project's 46px primitive plotting itself in, one site every 520ms after the hero intro. The site is a 72px round link in Ink 2; the plotted or hovered site comes up to full ink. On hover or focus, a small sheet opens beside it (flipped left past 58% of the width): 14px radius, raised ground, `line-2` edge, mono name, Jost kind, and a hairline-ruled footer with the status tag and "Open in /projects". It fades in from a 4px blur. Clicking selects that project's tab and scrolls to /projects. Hovering or focusing a site plots its primitive into the orbit. On touch, each site shows its mono name under the glyph instead of the sheet.
 
-### Project Tabs and Stage (signature)
-A vertical tablist (keys 1 to 3) beside a glass panel. Unselected tabs are transparent with desaturated, 55% opacity glyphs; the selected tab becomes a Glass Strong pill-card with rim and shadow and its glyph returns to full colour. Behind the panel, the stage swaps primitives with a scale-and-rotate morph (0.55 and -40deg to rest) and the panel body re-enters with a short rise and blur.
+### Plotter Field (hero)
+A 2D canvas behind the hero holds a 24px graph-paper dot grid (Ink 3 at 55%), fading out toward the ledger. A plotter head (an 11px ring, a 2.2px node, and short cross ticks) follows a fine pointer on a spring just short of critical damping. Its hairlines (`line-2`) run frame to frame with Ink 3 ticks where they hit the rails, dots within 170px come up to full ink, and a Geist Mono 11px readout shows `X 0000  Y 0000`. Within 72px of a project site the head locks onto it, its ring opening from 11px to 34px around the glyph, and the readout gives way to the site's sheet. Left idle for 2.6s, the head travels to the site of whichever project the orbit is plotting, labelled `plot <project>`. Under reduced motion the head snaps to the pointer (and to sites) with no spring and never travels on its own. Coarse pointers get the grid alone. The canvas pauses off-screen and re-reads ink on theme change.
+
+### Project Tabs (signature)
+A vertical tablist of equal-height rows (`grid-auto-rows: 1fr`, 6px gap). Each tab is 16px radius with a hairline edge and holds a `kbd` key (1 to 3, 6px radius hairline), a mono name over a Jost kind, and the 26px glyph. Hover steps the ground to raised. The selected tab inverts to text colour on the ground. Keys 1 to 3 select from anywhere on the page, and arrows, Home and End move within the list. Selection redraws the primitive in the panel and below the tabs. The column scrolls with the page; it does not stick. Below 900px the tabs become three columns showing only glyph and name.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** give every project exactly one primitive and one gray tone, and keep those pairings fixed (ring strongest, discs middle, house quietest).
-- **Do** let primitives cross pane edges so the lens reads: crisp outside, blurred inside.
-- **Do** build anything that floats as glass: glass fill, 1px glass edge, inset top highlight, pane shadow, 28px radius.
-- **Do** use pills (999px) for every control, chip and badge.
-- **Do** use the `-ink` step whenever a project tone is set as text.
-- **Do** ship both themes from the same tokens, switching with `data-theme`.
-- **Do** ease with cubic-bezier(0.16, 1, 0.3, 1) and keep motion slow; respect reduced motion.
+- **Do** put every new section in a cell on the frame: a 1px `line` top rule, `pad` padding, and crosshair ticks where the rule meets the rails or the `split` column.
+- **Do** draw any new project mark as a stroked primitive in a 100-unit box with `pathLength="1"`, a plot-in by stroke-dashoffset, and one filled node dot.
+- **Do** express hover and selection by inversion (text colour on the ground) or by a one-step ground lift, with 200 to 300ms ease-out (`cubic-bezier(0.16, 1, 0.3, 1)`).
+- **Do** pair every primary action as a pill label plus a round arrow disc that rotates -45deg on hover. Use the hairline pill for the secondary.
+- **Do** set names, titles and labels in Geist Mono 500 with negative tracking, and running copy in Jost.
+- **Do** give every new colour a dark and a light value, and check both themes.
+- **Do** honour reduced motion: strokes render fully drawn, and orbit, dots and bloom stop.
 
 ### Don't:
-- **Don't** reintroduce the retired pixel/game world: no pixel art, bitmap fonts, stepped shapes or game vocabulary.
-- **Don't** introduce any hue; the palette is black, white and true gray.
-- **Don't** fill a pane with a solid project tone.
-- **Don't** set Geist Mono on anything that is not a real command, path or key.
-- **Don't** use weights above 500 for headings, or uppercase tracked labels.
-- **Don't** use hard offset shadows or opaque floating cards.
-- **Don't** add a border heavier than 1px.
-- **Don't** rotate the house glyph.
+- **Don't** use frosted glass anywhere but the sticky nav. The glass-lens and pane world is retired.
+- **Don't** fill a primitive or render it as a solid shape. Fills are reserved for node dots, status dots and inverted states.
+- **Don't** return to the pixel world. Doto's dot matrix is limited to the hero corner note.
+- **Don't** introduce hue, gradients beyond the gray bloom, or per-project accent colours.
+- **Don't** add drop shadows or offset shadows. Separate surfaces with hairlines and tonal steps.
+- **Don't** set small uppercase tracked labels above headings as eyebrows or kickers. Section titles carry their own `/path` name.
+- **Don't** use a system or Jost face for display text, or icon glyphs from fonts. Icons are inline SVG strokes.

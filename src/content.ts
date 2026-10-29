@@ -31,7 +31,7 @@ type Copy = {
   meta: { title: string; description: string }
   skip: string
   nav: { label: string; projects: string; about: string; contact: string; lang: string; toDark: string; toLight: string }
-  hero: { title: string; sub: string; index: string; primary: string; secondary: string }
+  hero: { title: [string, string]; note: string[]; sub: string; index: string; open: string; primary: string; secondary: string }
   projects: { title: string; lead: string; list: string; source: string; site: string; soon: string; siteSoon: string; copy: string; copied: string; hosted: string }
   project: Record<ProjectId, ProjectCopy>
   about: {
@@ -44,7 +44,7 @@ type Copy = {
     career: string
   }
   contact: { title: string; lead: string; linkedin: string; github: string }
-  footer: { line: string; disclaimer: string; github: string }
+  footer: { line: string; github: string }
 }
 
 export const COPY: Record<Lang, Copy> = {
@@ -65,9 +65,11 @@ export const COPY: Record<Lang, Copy> = {
       toLight: 'Switch to light theme',
     },
     hero: {
-      title: 'Open-source software with AI integrations.',
+      title: ['Open-source software', 'with AI integrations.'],
+      note: ['Open source', 'Self-hostable', 'AI where it helps'],
       sub: 'I’m one developer in Brazil, and I build all of this. Run the released projects on your own server, or hang on for the hosted versions I’m putting online.',
       index: 'Projects',
+      open: 'Open in /projects',
       primary: 'CouraLabs on GitHub',
       secondary: 'Who builds this',
     },
@@ -85,7 +87,7 @@ export const COPY: Record<Lang, Copy> = {
     },
     project: {
       codeboros: {
-        kind: 'Self-hosted coding agent',
+        kind: 'A coding agent factory: self-host it, or use it as a paid service',
         badge: 'Pre-release',
         status: 'Pre-release: v1 is still being built',
         lines: [
@@ -97,11 +99,11 @@ export const COPY: Record<Lang, Copy> = {
         stats: [
           ['Stack', 'Bun, TypeScript, Docker Compose'],
           ['License', 'Apache 2.0'],
-          ['Runs', 'On your infrastructure, with your model keys'],
+          ['Runs', 'On your infrastructure with your model keys, or as a paid hosted service once it launches'],
         ],
       },
       openmixing: {
-        kind: 'MCP server that lets your agent DJ',
+        kind: 'Self-hosted MCP tools that mix your tracks like a DJ',
         badge: 'Usable now',
         status: 'Usable now, installed from source',
         lines: [
@@ -118,11 +120,11 @@ export const COPY: Record<Lang, Copy> = {
         run: { label: 'Install from source', code: 'git clone https://github.com/CouraLabs/OpenMixing.git\ncd OpenMixing\npython -m venv .venv && .venv/bin/pip install -e .[dev]' },
       },
       openhouse: {
-        kind: 'Household finance with shared books',
+        kind: 'Household management for the whole family: finances, pantry, food, pets and more',
         badge: 'Self-host today',
         status: 'Free to self-host today',
         lines: [
-          'One shared ledger that everyone in the house signs in to.',
+          'One shared home base that everyone in the family signs in to.',
           'Accounts and cards in USD, BRL and EUR, side by side.',
           'Recurring rules, category limits and savings goals.',
           'Hosted plans are planned, and one of them will have AI features.',
@@ -157,7 +159,7 @@ export const COPY: Record<Lang, Copy> = {
       linkedin: 'LinkedIn',
       github: 'GitHub',
     },
-    footer: { line: 'CouraLabs, an independent studio in Brazil.', disclaimer: 'Independent, and not affiliated with Anthropic.', github: 'GitHub' },
+    footer: { line: 'CouraLabs, an independent studio in Brazil.', github: 'GitHub' },
   },
   pt: {
     meta: {
@@ -176,9 +178,11 @@ export const COPY: Record<Lang, Copy> = {
       toLight: 'Mudar para o tema claro',
     },
     hero: {
-      title: 'Software open source com integrações de IA.',
+      title: ['Software open\u00a0source', 'com integrações de IA.'],
+      note: ['Open source', 'Auto-hospedável', 'IA onde ajuda'],
       sub: 'Sou um desenvolvedor no Brasil e construo tudo isso sozinho. Rode os projetos já lançados no seu servidor, ou espere as versões hospedadas que estou colocando no ar.',
       index: 'Projetos',
+      open: 'Abrir em /projetos',
       primary: 'CouraLabs no GitHub',
       secondary: 'Quem constrói',
     },
@@ -196,7 +200,7 @@ export const COPY: Record<Lang, Copy> = {
     },
     project: {
       codeboros: {
-        kind: 'Agente de código auto-hospedado',
+        kind: 'Uma fábrica de agentes de código: auto-hospede ou use como serviço pago',
         badge: 'Pré-lançamento',
         status: 'Pré-lançamento: a v1 ainda está sendo construída',
         lines: [
@@ -208,11 +212,11 @@ export const COPY: Record<Lang, Copy> = {
         stats: [
           ['Stack', 'Bun, TypeScript, Docker Compose'],
           ['Licença', 'Apache 2.0'],
-          ['Roda', 'Na sua infraestrutura, com suas chaves de modelo'],
+          ['Roda', 'Na sua infraestrutura com suas chaves de modelo, ou como serviço hospedado pago quando lançar'],
         ],
       },
       openmixing: {
-        kind: 'Servidor MCP que transforma seu agente em DJ',
+        kind: 'Ferramentas MCP auto-hospedadas que mixam suas faixas como um DJ',
         badge: 'Já funciona',
         status: 'Já funciona, instalado pelo código-fonte',
         lines: [
@@ -229,11 +233,11 @@ export const COPY: Record<Lang, Copy> = {
         run: { label: 'Instalar pelo código-fonte', code: 'git clone https://github.com/CouraLabs/OpenMixing.git\ncd OpenMixing\npython -m venv .venv && .venv/bin/pip install -e .[dev]' },
       },
       openhouse: {
-        kind: 'Finanças da casa com contas compartilhadas',
+        kind: 'Gestão da casa para toda a família: finanças, despensa, comida, pets e mais',
         badge: 'Auto-hospede hoje',
         status: 'Grátis para auto-hospedar hoje',
         lines: [
-          'Um livro-caixa compartilhado por todos da casa.',
+          'Um espaço compartilhado em que toda a família entra.',
           'Contas e cartões em USD, BRL e EUR, lado a lado.',
           'Lançamentos recorrentes, limites por categoria e metas de economia.',
           'Planos hospedados estão previstos, e um deles terá recursos de IA.',
@@ -268,6 +272,6 @@ export const COPY: Record<Lang, Copy> = {
       linkedin: 'LinkedIn',
       github: 'GitHub',
     },
-    footer: { line: 'CouraLabs, um estúdio independente no Brasil.', disclaimer: 'Independente, e sem afiliação com a Anthropic.', github: 'GitHub' },
+    footer: { line: 'CouraLabs, um estúdio independente no Brasil.', github: 'GitHub' },
   },
 }

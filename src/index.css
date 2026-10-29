@@ -1,92 +1,66 @@
 @import '@fontsource-variable/jost';
 @import '@fontsource-variable/geist-mono';
+@import '@fontsource-variable/doto';
 
-/* Dark: true black ground, white ink. The three primitives differ by tone and form, never by hue. */
+/* Dark: a black drafting sheet, white ink, hairline structure. */
 :root,
 [data-theme='dark'] {
   color-scheme: dark;
   --ground: #0a0a0a;
-  --ground-2: #131313;
-  --text: #f4f4f4;
-  --text-2: #b3b3b3;
-  --text-3: #8f8f8f;
-  --line: rgb(244 244 244 / 0.12);
+  --ground-2: #111111;
+  --ground-3: #181818;
+  --text: #f2f2f0;
+  --text-2: #b0b0ad;
+  --text-3: #8a8a87;
+  --line: rgb(242 242 240 / 0.12);
+  --line-2: rgb(242 242 240 / 0.22);
+  --ink-draw: #f2f2f0;
+  --bloom: rgb(200 205 198 / 0.13);
+  --bloom-2: rgb(255 255 255 / 0.05);
+  --nav-bg: rgb(10 10 10 / 0.62);
 
-  --glass-bg: rgb(30 30 30 / 0.42);
-  --glass-bg-strong: rgb(30 30 30 / 0.66);
-  --glass-edge: rgb(255 255 255 / 0.14);
-  --glass-top: rgb(255 255 255 / 0.22);
-  --glass-spec: rgb(255 255 255 / 0.07);
-  --glass-shadow: 0 30px 70px -30px rgb(0 0 0 / 0.8), 0 2px 10px -4px rgb(0 0 0 / 0.5);
-  --tint: 0.16;
-
-  --btn-bg: #f4f4f4;
+  --btn-bg: #f2f2f0;
   --btn-text: #0a0a0a;
   --btn-hover: #ffffff;
 
-  /* Wordmark: "Coura" sits back, "Labs" is full white. */
-  --wm-soft: #a3a3a3;
-
-  --c-codeboros: #ececec;
-  --c-codeboros-hi: #ffffff;
-  --c-codeboros-ink: #d4d4d4;
-  --c-openmixing: #a8a8a8;
-  --c-openmixing-hi: #e2e2e2;
-  --c-openmixing-ink: #c2c2c2;
-  --c-openhouse: #737373;
-  --c-openhouse-hi: #b8b8b8;
-  --c-openhouse-ink: #a3a3a3;
-
-  --field-opacity: 0.9;
+  /* Wordmark: "Coura" sits back, "Labs" is full ink. */
+  --wm-soft: #a0a09d;
 }
 
-/* Light: white ground, black ink, the same primitives in graphite. */
+/* Light: the same sheet in paper white with graphite ink. */
 [data-theme='light'] {
   color-scheme: light;
-  --ground: #f2f2f2;
-  --ground-2: #e7e7e7;
-  --text: #0a0a0a;
-  --text-2: #444444;
-  --text-3: #5e5e5e;
-  --line: rgb(10 10 10 / 0.12);
+  --ground: #f2f2f0;
+  --ground-2: #e9e9e6;
+  --ground-3: #e0e0dc;
+  --text: #0c0c0c;
+  --text-2: #464644;
+  --text-3: #62625f;
+  --line: rgb(12 12 12 / 0.13);
+  --line-2: rgb(12 12 12 / 0.24);
+  --ink-draw: #0c0c0c;
+  --bloom: rgb(24 26 24 / 0.2);
+  --bloom-2: rgb(0 0 0 / 0.075);
+  --nav-bg: rgb(242 242 240 / 0.7);
 
-  --glass-bg: rgb(255 255 255 / 0.46);
-  --glass-bg-strong: rgb(255 255 255 / 0.7);
-  --glass-edge: rgb(255 255 255 / 0.8);
-  --glass-top: rgb(255 255 255 / 0.95);
-  --glass-spec: rgb(255 255 255 / 0.5);
-  --glass-shadow: 0 30px 70px -34px rgb(0 0 0 / 0.38), 0 2px 10px -4px rgb(0 0 0 / 0.14);
-  --tint: 0.1;
-
-  --btn-bg: #0a0a0a;
-  --btn-text: #f4f4f4;
+  --btn-bg: #0c0c0c;
+  --btn-text: #f2f2f0;
   --btn-hover: #2a2a2a;
 
-  --wm-soft: #686868;
-
-  --c-codeboros: #121212;
-  --c-codeboros-hi: #555555;
-  --c-codeboros-ink: #1f1f1f;
-  --c-openmixing: #5c5c5c;
-  --c-openmixing-hi: #a3a3a3;
-  --c-openmixing-ink: #333333;
-  --c-openhouse: #8c8c8c;
-  --c-openhouse-hi: #c8c8c8;
-  --c-openhouse-ink: #4d4d4d;
-
-  --field-opacity: 0.82;
+  --wm-soft: #666663;
 }
 
 :root {
   --font: 'Jost Variable', 'Jost', ui-sans-serif, system-ui, sans-serif;
   --mono: 'Geist Mono Variable', ui-monospace, 'SF Mono', Menlo, monospace;
+  --dots: 'Doto Variable', 'Doto', 'Geist Mono Variable', ui-monospace, monospace;
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
-  --r-pane: 28px;
+  --r-panel: 20px;
   --r-ctl: 999px;
-  --gutter: clamp(20px, 5vw, 72px);
-  --max: 1240px;
-  --blur: 26px;
+  --pad: clamp(20px, 4.4vw, 64px);
+  --max: 1320px;
+  --nav-h: 64px;
 }
 
 *,
@@ -98,7 +72,7 @@
 html {
   background: var(--ground);
   scroll-behavior: smooth;
-  scroll-padding-top: 96px;
+  scroll-padding-top: 72px;
   -webkit-text-size-adjust: 100%;
   overflow-x: clip;
   scrollbar-color: color-mix(in srgb, var(--text) 22%, transparent) transparent;
