@@ -73,6 +73,12 @@
   box-shadow: 0 16px 30px -16px rgb(0 0 0 / 0.65);
 }
 
+.btn:active {
+  translate: 0 0;
+  scale: 0.98;
+  transition-duration: 90ms;
+}
+
 .btn-glass {
   background: var(--glass-bg);
   border-color: var(--glass-edge);
@@ -119,29 +125,54 @@
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  font-size: 1.12rem;
+  font-size: 1.16rem;
   font-weight: 600;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   text-decoration: none;
 }
 
-.mark {
+.logo {
+  display: block;
+  height: 22px;
+  width: auto;
+  overflow: visible;
+}
+.logo-c,
+.logo-l {
+  stroke-dasharray: 100;
+  animation: logo-draw 1000ms var(--ease-out) 200ms backwards;
+}
+.logo-l {
+  animation-delay: 800ms;
+}
+@keyframes logo-draw {
+  from {
+    stroke-dashoffset: 100;
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+}
+/* The stem drops and settles once per hover; the C stays put. */
+.brand:hover .logo-stem {
+  animation: stem-drop 700ms var(--ease-out);
+}
+@keyframes stem-drop {
+  35% {
+    translate: 0 6px;
+  }
+}
+
+.wordmark {
   display: inline-flex;
-  gap: 3px;
 }
-.mark svg {
-  width: 15px;
-  height: 15px;
-  transition: rotate 700ms var(--ease-out);
+.wm-coura {
+  color: var(--wm-soft);
+  font-weight: 500;
 }
-.brand:hover .mark svg:nth-child(1) {
-  rotate: 180deg;
-}
-.brand:hover .mark svg:nth-child(2) {
-  rotate: -90deg;
-}
-.brand:hover .mark svg:nth-child(3) {
-  rotate: 90deg;
+.wm-labs {
+  color: var(--text);
 }
 
 .nav-links {
@@ -182,10 +213,13 @@
   letter-spacing: 0.02em;
   transition:
     background-color 200ms var(--ease-out),
-    rotate 500ms var(--ease-out);
+    scale 200ms var(--ease-out);
 }
 .tool:hover {
   background: var(--line);
+}
+.tool:active {
+  scale: 0.92;
 }
 .tool:active .icon {
   rotate: 45deg;
@@ -229,7 +263,20 @@
   max-width: 12.5ch;
 }
 
+.word {
+  display: inline-block;
+  animation: word-in 1000ms var(--ease-out) calc(320ms + var(--i) * 80ms) backwards;
+}
+@keyframes word-in {
+  from {
+    opacity: 0;
+    translate: 0 0.32em;
+    filter: blur(10px);
+  }
+}
+
 .hero-sub {
+  animation: rise-in 900ms var(--ease-out) 700ms backwards;
   margin-top: 22px;
   max-width: 46ch;
   font-size: 1.125rem;
@@ -240,6 +287,25 @@
 .index {
   margin-top: 36px;
   border-top: 1px solid var(--line);
+}
+
+.index li {
+  animation: rise-in 900ms var(--ease-out) backwards;
+}
+.index li:nth-child(1) {
+  animation-delay: 820ms;
+}
+.index li:nth-child(2) {
+  animation-delay: 900ms;
+}
+.index li:nth-child(3) {
+  animation-delay: 980ms;
+}
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    translate: 0 12px;
+  }
 }
 
 .index-row {
@@ -308,6 +374,7 @@
 
 .hero .actions {
   margin-top: 32px;
+  animation: rise-in 900ms var(--ease-out) 1080ms backwards;
 }
 
 /* The field: each primitive is placed by --x/--y/--s; focusing a project glides it under the glass. */
@@ -501,10 +568,8 @@
 .tab-glyph {
   width: 32px;
   height: 32px;
-  filter: saturate(0.15);
-  opacity: 0.55;
+  opacity: 0.5;
   transition:
-    filter 500ms var(--ease-out),
     opacity 500ms var(--ease-out),
     rotate 900ms var(--ease-out);
 }
@@ -512,14 +577,13 @@
   opacity: 0.8;
 }
 .tab[aria-selected='true'] .tab-glyph {
-  filter: none;
   opacity: 1;
   rotate: 90deg;
 }
 /* The house keeps its roof up wherever a glyph turns. */
 .tab[aria-selected='true'] .tab-glyph[data-shape='openhouse'],
 .index-row .index-glyph[data-shape='openhouse'],
-.brand:hover .mark svg[data-shape='openhouse'] {
+.index-row:hover .index-glyph[data-shape='openhouse'] {
   rotate: none;
 }
 
@@ -1007,8 +1071,8 @@
     padding-left: 14px;
     gap: 6px;
   }
-  .brand .mark {
-    display: none;
+  .logo {
+    height: 18px;
   }
   .brand {
     font-size: 1rem;

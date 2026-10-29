@@ -1,6 +1,8 @@
-import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type KeyboardEvent as ReactKeyboardEvent } from 'react'
+import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type KeyboardEvent as ReactKeyboardEvent, type MouseEvent as ReactMouseEvent } from 'react'
+import { flushSync } from 'react-dom'
 import './App.css'
 import { COPY, LINKS, PROJECTS, type Lang, type ProjectId } from './content'
+import Logo from './Logo'
 import Shape from './Shape'
 
 type Theme = 'dark' | 'light'
@@ -65,16 +67,6 @@ function Run({ label, code, copy, copied }: { label: string; code: string; copy:
         <code>{code}</code>
       </pre>
     </figure>
-  )
-}
-
-function Mark() {
-  return (
-    <span className="mark" aria-hidden="true">
-      {PROJECTS.map((p) => (
-        <Shape key={p.id} id={p.id} />
-      ))}
-    </span>
   )
 }
 
@@ -147,7 +139,7 @@ export default function App() {
 
   useLayoutEffect(() => {
     document.documentElement.dataset.theme = theme
-    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#0c0e16' : '#eceef3')
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#0a0a0a' : '#f2f2f2')
     localStorage.setItem('cl-theme', theme)
   }, [theme])
 
@@ -187,7 +179,27 @@ export default function App() {
     tabRefs.current[next]?.focus()
   }
 
-  const toggleTheme = () => setTheme((v) => (v === 'dark' ? 'light' : 'dark'))
+  const toggleTheme = (e: ReactMouseEvent<HTMLElement>) => {
+    const next: Theme = theme === 'dark' ? 'light' : 'dark'
+    const root = document.documentElement
+    if (!document.startViewTransition || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setTheme(next)
+      return
+    }
+    const r = e.currentTarget.getBoundingClientRect()
+    const x = r.left + r.width / 2
+    const y = r.top + r.height / 2
+    const radius = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y))
+    root.classList.add('theme-switching')
+    const vt = document.startViewTransition(() => flushSync(() => setTheme(next)))
+    vt.ready.then(() =>
+      root.animate(
+        { clipPath: [`circle(0px at ${x}px ${y}px)`, `circle(${radius}px at ${x}px ${y}px)`] },
+        { duration: 1000, easing: 'cubic-bezier(0.16, 1, 0.3, 1)', pseudoElement: '::view-transition-new(root)' },
+      ),
+    )
+    vt.finished.finally(() => root.classList.remove('theme-switching'))
+  }
   const toggleLang = () => setLang((l) => (l === 'en' ? 'pt' : 'en'))
   const themeLabel = theme === 'dark' ? t.nav.toLight : t.nav.toDark
 
@@ -199,9 +211,12 @@ export default function App() {
 
       <header className={`topbar${scrolled ? ' is-scrolled' : ''}`}>
         <div className="topbar-inner glass">
-          <a className="brand" href="#top">
-            <Mark />
-            <span>CouraLabs</span>
+          <a className="brand" href="#top" aria-label="CouraLabs">
+            <Logo />
+            <span className="wordmark" aria-hidden="true">
+              <span className="wm-coura">Coura</span>
+              <span className="wm-labs">Labs</span>
+            </span>
           </a>
           <nav aria-label={t.nav.label}>
             <ul className="nav-links">
@@ -238,7 +253,15 @@ export default function App() {
           </div>
 
           <div className="hero-pane glass">
-            <h1 id="hero-title">{t.hero.title}</h1>
+            <h1 id="hero-title">
+              {t.hero.title.split(' ').map((w, i) => (
+                <span key={i}>
+                  <span className="word" style={{ '--i': i } as CSSProperties}>
+                    {w}
+                  </span>{' '}
+                </span>
+              ))}
+            </h1>
             <p className="hero-sub">{t.hero.sub}</p>
 
             <h2 className="visually-hidden">{t.hero.index}</h2>

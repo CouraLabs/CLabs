@@ -1,40 +1,40 @@
 ---
 name: CouraLabs
-description: Three geometric primitives seen through a lens of frosted glass.
+description: Three geometric primitives seen through a lens of frosted glass, in black and white.
 colors:
-  indigo: "#7a72ff"
-  indigo-hi: "#bcb6ff"
-  indigo-ink: "#aaa4ff"
-  coral: "#ff6b4a"
-  coral-hi: "#ffb08c"
-  coral-ink: "#ff9a7c"
-  mint: "#26cf9b"
-  mint-hi: "#92f2d0"
-  mint-ink: "#63e2b8"
-  ink-ground: "#0c0e16"
-  ink-ground-raised: "#121522"
-  ink-text: "#eef0f7"
-  ink-text-muted: "#b0b6cc"
-  ink-text-faint: "#8a90a8"
-  ink-hairline: "rgb(238 240 247 / 0.1)"
-  ink-glass: "rgb(24 28 44 / 0.4)"
-  ink-glass-strong: "rgb(24 28 44 / 0.62)"
-  ink-glass-edge: "rgb(255 255 255 / 0.13)"
-  indigo-light: "#5d55f0"
-  indigo-ink-light: "#463fd0"
-  coral-light: "#f2603c"
-  coral-ink-light: "#b93c1d"
-  mint-light: "#12b386"
-  mint-ink-light: "#08795a"
-  porcelain-ground: "#eceef3"
-  porcelain-ground-raised: "#e1e4ec"
-  porcelain-text: "#11131c"
-  porcelain-text-muted: "#43495e"
-  porcelain-text-faint: "#5b6176"
-  porcelain-hairline: "rgb(17 19 28 / 0.1)"
-  porcelain-glass: "rgb(255 255 255 / 0.42)"
-  porcelain-glass-strong: "rgb(255 255 255 / 0.66)"
-  porcelain-glass-edge: "rgb(255 255 255 / 0.75)"
+  white-ink: "#f4f4f4"
+  codeboros-dark: "#ececec"
+  codeboros-hi-dark: "#ffffff"
+  openmixing-dark: "#a8a8a8"
+  openmixing-hi-dark: "#e2e2e2"
+  openhouse-dark: "#737373"
+  openhouse-hi-dark: "#b8b8b8"
+  codeboros-light: "#121212"
+  codeboros-hi-light: "#555555"
+  openmixing-light: "#5c5c5c"
+  openmixing-hi-light: "#a3a3a3"
+  openhouse-light: "#8c8c8c"
+  openhouse-hi-light: "#c8c8c8"
+  ink-ground: "#0a0a0a"
+  ink-ground-raised: "#131313"
+  ink-text: "#f4f4f4"
+  ink-text-muted: "#b3b3b3"
+  ink-text-faint: "#8f8f8f"
+  ink-hairline: "rgb(244 244 244 / 0.12)"
+  ink-glass: "rgb(30 30 30 / 0.42)"
+  ink-glass-strong: "rgb(30 30 30 / 0.66)"
+  ink-glass-edge: "rgb(255 255 255 / 0.14)"
+  wordmark-soft-dark: "#a3a3a3"
+  white-ground: "#f2f2f2"
+  white-ground-raised: "#e7e7e7"
+  black-ink: "#0a0a0a"
+  white-text-muted: "#444444"
+  white-text-faint: "#5e5e5e"
+  white-hairline: "rgb(10 10 10 / 0.12)"
+  white-glass: "rgb(255 255 255 / 0.46)"
+  white-glass-strong: "rgb(255 255 255 / 0.7)"
+  white-glass-edge: "rgb(255 255 255 / 0.8)"
+  wordmark-soft-light: "#686868"
 typography:
   display:
     fontFamily: "Jost Variable, Jost, ui-sans-serif, system-ui, sans-serif"
@@ -110,7 +110,7 @@ components:
   button-primary-hover:
     backgroundColor: "#ffffff"
   button-primary-light:
-    backgroundColor: "{colors.porcelain-text}"
+    backgroundColor: "{colors.black-ink}"
     textColor: "#f4f5f9"
   button-primary-light-hover:
     backgroundColor: "#262a3a"
@@ -166,47 +166,39 @@ components:
 
 **Creative North Star: "The Lens Over Three Forms"**
 
-Glass is a lens, not a finish. The whole system is a quiet ground carrying exactly three geometric primitives, one per project, with frosted panes set over them. Colour lives in the primitives; the glass shows it. A primitive read crisp outside a pane and blurred inside it is the system's single visual idea, and every surface either holds a pane, shows a primitive, or stays out of the way. Codeboros is a ring with a gap that slowly turns, OpenMixing two overlapping discs, OpenHouse a triangle roof over a square.
+Glass is a lens, not a finish. The whole system is a quiet ground carrying exactly three geometric primitives, one per project, with frosted panes set over them. Tone lives in the primitives; the glass shows it. A primitive read crisp outside a pane and blurred inside it is the system's single visual idea, and every surface either holds a pane, shows a primitive, or stays out of the way. Codeboros is a ring with a gap that slowly turns, OpenMixing two overlapping discs, OpenHouse a triangle roof over a square.
 
-Density is low and the voice is calm: one humanist geometric sans (Jost) at medium weight for every voice, generous section spacing, pill controls, one hairline weight. Motion is slow and eased: primitives drift on 19 to 90 second loops, panes rise in over 1.3 seconds, and focusing a project glides its primitive under the glass while the pane tints toward its colour. The system ships in two equal themes, ink-blue dark and cool porcelain light, with the same primitives a step deeper in light.
+Density is low and the voice is calm: one humanist geometric sans (Jost) at medium weight for every voice, generous section spacing, pill controls, one hairline weight. Motion is slow and eased: primitives drift on 19 to 90 second loops, panes rise in over 1.3 seconds, and focusing a project glides its primitive under the glass while the pane tints toward its colour. The system ships in two equal themes, black and white, with the same primitives a step deeper in light.
 
 The retired pixel/game world is the confirmed anti-reference: no pixel art, no game vocabulary, no stepped or bitmap rendering.
 
 **Key Characteristics:**
-- Three primitives, three hues, one per project; neutral UI everywhere else.
+- Three primitives, three gray tones, one per project; the whole interface is black and white.
 - Frosted panes: translucent fill, 26px backdrop blur with 165% saturation, thin bright edge, inset top highlight, soft offset shadow, pointer-following specular.
 - Jost 500 for every heading and control; Geist Mono only for real commands and code.
 - Pills for controls (999px), 28px for panes, 1px hairlines only.
-- Dark and light themes are peers, switched by `data-theme`, defaulting to the OS.
+- Dark and light themes are peers, switched by `data-theme`, defaulting to the OS. The switch opens the new theme as a circle from the pressed button (View Transitions, off under reduced motion).
 
 ## Colors
 
-Three saturated primitives (indigo, coral, mint) on a near-neutral, faintly blue ground; everything that is not a project is ink or porcelain.
-
-### Primary
-- **Mixing Indigo** (indigo): OpenMixing's primitive, and the system's only UI accent: focus rings, text selection (45% mix) and the caret. Light theme uses Deep Indigo (indigo-light).
-
-### Secondary
-- **Loop Coral** (coral): Codeboros's ring. Light theme uses coral-light.
-
-### Tertiary
-- **House Mint** (mint): OpenHouse's roof and square. Light theme uses mint-light.
-
-Each primitive has three steps: the base hue (shapes, status dots, diamond bullets, pane tint), a `-hi` step (the light end of the shaded gradient on background-scale primitives), and an `-ink` step (the hue when it must be read as text, such as status badges). In light, the ink steps drop far darker (coral-ink-light, indigo-ink-light, mint-ink-light) to hold contrast on white glass.
+Strictly black and white. The ground and ink swap with the theme; every project primitive is a tone of gray, told apart by form and by lightness, never by hue.
 
 ### Neutral
-- **Ink Ground** (ink-ground): the dark theme page, also `theme-color` and the favicon tile. Ink Ground Raised is the second step.
-- **Porcelain Ground** (porcelain-ground): the light theme page; Porcelain Ground Raised is its second step.
-- **Text, Muted, Faint** (ink-text / ink-text-muted / ink-text-faint and the porcelain trio): primary copy; secondary copy, descriptions and nav links; labels, key caps, footer and the "soon" badge.
-- **Hairline** (ink-hairline / porcelain-hairline): text colour at 10% alpha. The only divider and outline colour for rows, chips, facts and tool buttons.
-- **Glass, Glass Strong, Glass Edge**: pane fill at rest, pane fill when raised (scrolled nav, selected tab, hover on glass buttons), and the 1px bright rim.
+- **Ink Ground** (ink-ground, #0a0a0a) in dark and **White Ground** (white-ground, #f2f2f2) in light; each has a raised second step.
+- **Text, Muted, Faint**: white-ink on black, black-ink on white, with true-gray secondary steps. No tint in any gray.
+- **Hairline**: text colour at 12% alpha, the only divider and outline colour.
+- **Glass, Glass Strong, Glass Edge**: neutral translucent fills and the 1px bright rim.
+
+### Primitive tones
+Each project keeps a base tone and a lighter `-hi` step for the shaded gradient on background-scale shapes. Codeboros is the strongest tone (white in dark, near-black in light), OpenMixing the middle, OpenHouse the quietest. In text, project tones resolve to the `-ink` step.
+
+### Wordmark
+"Coura" is set in the soft gray (wordmark-soft) at weight 500; "Labs" is full text colour at 600, so it reads white on the black theme and black on the white theme.
 
 ### Named Rules
-**The Three Primitives Rule.** A project hue appears only attached to its project: its shape, its dot, its bullets, its badge, its pane tint. Neutral UI never borrows coral or mint; indigo's only exception is focus, selection and caret.
+**The Two Colours Rule.** The interface is black and white. Focus rings, selection and the caret use the text colour; selection inverts to text-on-ground. No hue is introduced anywhere, including status dots.
 
-**The Lens Rule.** Panes are never filled with a solid project colour. A pane takes colour only by what sits behind it, plus at most an 18% project-colour gradient at 155deg fading out by 62%.
-
-**The Ink Step Rule.** When a project hue is text, use its `-ink` step, never the base hue.
+**The Lens Rule.** Panes are never filled solid. They take tone from what sits behind them, plus the faint project-tone sheen.
 
 ## Typography
 
@@ -245,7 +237,7 @@ Depth is material, not stacked cards: a flat ground, primitives at the back, and
 
 ### Shadow Vocabulary
 - **Pane shadow, dark** (`box-shadow: 0 30px 70px -30px rgb(0 0 0 / 0.7), 0 2px 10px -4px rgb(0 0 0 / 0.4)`): every glass slab, panel and the nav.
-- **Pane shadow, light** (`box-shadow: 0 30px 70px -34px rgb(34 40 72 / 0.4), 0 2px 10px -4px rgb(34 40 72 / 0.14)`): the same, tinted ink-blue for porcelain.
+- **Pane shadow, light** (`box-shadow: 0 30px 70px -34px rgb(0 0 0 / 0.38), 0 2px 10px -4px rgb(0 0 0 / 0.14)`): the same, neutral black for white.
 - **Glass rim** (`box-shadow: inset 0 1px 0 var(--glass-top)`): top highlight on panes, glass buttons and selected tabs.
 - **Primary button** (`box-shadow: 0 10px 24px -14px rgb(0 0 0 / 0.6)`, deepening on hover): the solid action's small lift.
 
@@ -258,7 +250,7 @@ Depth is material, not stacked cards: a flat ground, primitives at the back, and
 
 Two radii carry the system: pills (999px) for every control, chip, badge, nav bar and status, and 28px for every pane. Intermediate radii are reserved for nested rows: 22px for project tabs (18px on narrow screens), 14px for hover rows in the hero index, 7px for key caps and inline code. Borders are always 1px, either hairline or glass edge.
 
-The three primitives are the system's geometry and are drawn on a 100-unit box: a ring (r36, stroke 16, round caps, an 84/16 dash) rotated -62deg, two r29 discs with the right one at 62% opacity, and a roof triangle over a square with 4-unit rounded joins. At background scale they take a 155deg gradient from the `-hi` step to the base hue; as glyphs they are flat. List bullets are 7px squares rotated 45deg, filled with the project hue.
+The three primitives are the system's geometry and are drawn on a 100-unit box: a ring (r36, stroke 16, round caps, an 84/16 dash) rotated -62deg, two r29 discs with the right one at 62% opacity, and a roof triangle over a square with 4-unit rounded joins. At background scale they take a 155deg gradient from the `-hi` step to the base tone; as glyphs they are flat. List bullets are 7px squares rotated 45deg, filled with the project tone.
 
 **The Roof Up Rule.** Wherever glyphs turn on hover or selection, the house never rotates.
 
@@ -274,11 +266,11 @@ Calm, solid or glass, always pill.
 
 ### Chips
 - **Style:** transparent with 1px hairline border, pill, 8px 16px, 0.98rem (skills list).
-- **Status pill:** the same hairline pill at 0.94rem/500 led by an 8px dot in the project hue with a slow 2.6s ping ring.
+- **Status pill:** the same hairline pill at 0.94rem/500 led by an 8px dot in the project tone with a slow 2.6s ping ring.
 
 ### Cards / Containers
 - **Corner Style:** 28px.
-- **Background:** Glass; the project panel layers an 18% project-hue gradient over it.
+- **Background:** Glass; the project panel layers an 12% project-tone gradient over it.
 - **Shadow Strategy:** pane shadow plus rim (see Elevation & Depth).
 - **Border:** 1px glass edge.
 - **Internal Padding:** clamp(28px, 4vw, 52px); contact pane clamp(36px, 5vw, 64px).
@@ -286,12 +278,12 @@ Calm, solid or glass, always pill.
 
 ### Navigation
 - **Style:** a fixed glass pill bar 14px from the top, 58px tall, inside the container width; it shifts to Glass Strong once the page scrolls.
-- **Brand:** the three primitives as a 15px mark plus the wordmark at 1.12rem/600; on hover the mark's ring and discs turn, the house stays upright. The mark hides under 720px.
+- **Brand:** the CL monogram (a squared C open to the right, a stem hanging from its top bar, the bottom bar running on as the L foot; round caps, 14-unit stroke) plus the two-tone wordmark at 1.16rem. The monogram draws on at load; on hover the stem drops and settles once while the C stays put. The same monogram ships as favicon.svg and logo.svg, both following the OS colour scheme.
 - **Links:** muted pills (8px 16px) that take a hairline fill and full text colour on hover.
 - **Tools:** 42px circular hairline buttons for language and theme; the theme button is dropped under 420px (the footer carries both).
 
 ### Project Index (signature)
-The hero list of projects: a 24px flat glyph, name, kind, ink-step status badge and arrow per row, divided by hairlines. Hover or focus tints the row with 9% of the project hue, turns the glyph 90deg and scales it 1.12, slides the arrow 4px, and glides that project's primitive under the hero glass while the other two fade to 32%.
+The hero list of projects: a 24px flat glyph, name, kind, ink-step status badge and arrow per row, divided by hairlines. Hover or focus tints the row with 9% of the project tone, turns the glyph 90deg and scales it 1.12, slides the arrow 4px, and glides that project's primitive under the hero glass while the other two fade to 32%.
 
 ### Project Tabs and Stage (signature)
 A vertical tablist (keys 1 to 3) beside a glass panel. Unselected tabs are transparent with desaturated, 55% opacity glyphs; the selected tab becomes a Glass Strong pill-card with rim and shadow and its glyph returns to full colour. Behind the panel, the stage swaps primitives with a scale-and-rotate morph (0.55 and -40deg to rest) and the panel body re-enters with a short rise and blur.
@@ -299,17 +291,18 @@ A vertical tablist (keys 1 to 3) beside a glass panel. Unselected tabs are trans
 ## Do's and Don'ts
 
 ### Do:
-- **Do** give every project exactly one primitive and one hue, and keep those pairings fixed (ring and coral, discs and indigo, house and mint).
+- **Do** give every project exactly one primitive and one gray tone, and keep those pairings fixed (ring strongest, discs middle, house quietest).
 - **Do** let primitives cross pane edges so the lens reads: crisp outside, blurred inside.
 - **Do** build anything that floats as glass: glass fill, 1px glass edge, inset top highlight, pane shadow, 28px radius.
 - **Do** use pills (999px) for every control, chip and badge.
-- **Do** use the `-ink` step whenever a project hue is set as text.
+- **Do** use the `-ink` step whenever a project tone is set as text.
 - **Do** ship both themes from the same tokens, switching with `data-theme`.
 - **Do** ease with cubic-bezier(0.16, 1, 0.3, 1) and keep motion slow; respect reduced motion.
 
 ### Don't:
 - **Don't** reintroduce the retired pixel/game world: no pixel art, bitmap fonts, stepped shapes or game vocabulary.
-- **Don't** fill a pane or a neutral control with a solid project colour.
+- **Don't** introduce any hue; the palette is black, white and true gray.
+- **Don't** fill a pane with a solid project tone.
 - **Don't** set Geist Mono on anything that is not a real command, path or key.
 - **Don't** use weights above 500 for headings, or uppercase tracked labels.
 - **Don't** use hard offset shadows or opaque floating cards.
