@@ -191,27 +191,21 @@
 
 .logo {
   display: block;
-  height: 24px;
+  height: 30px;
   width: auto;
   overflow: visible;
+  --sw: 1.5px;
 }
-.logo-c {
-  animation: logo-c-in 900ms var(--ease-out) 200ms backwards;
+.logo [data-plot] {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: plot 1100ms var(--ease-in-out) 200ms forwards;
 }
-.logo-l {
-  animation: logo-l-in 900ms var(--ease-out) 560ms backwards;
+.logo .logo-l {
+  animation-delay: 620ms;
 }
-@keyframes logo-c-in {
-  from {
-    opacity: 0;
-    translate: -40px 0;
-  }
-}
-@keyframes logo-l-in {
-  from {
-    opacity: 0;
-    translate: 0 50px;
-  }
+.logo-node {
+  animation: arrive 600ms var(--ease-out) 1300ms backwards;
 }
 /* The L lifts and settles once per hover; the C stays put. */
 .brand:hover .logo-stem {
@@ -219,7 +213,7 @@
 }
 @keyframes stem-lift {
   35% {
-    translate: 0 -34px;
+    translate: 0 -10px;
   }
 }
 
@@ -1442,7 +1436,8 @@
   .orbit-ring,
   .orbit-shape [data-plot],
   .panel-shape [data-plot],
-  .site-glyph [data-plot] {
+  .site-glyph [data-plot],
+  .logo [data-plot] {
     stroke-dashoffset: 0;
   }
   .orbit-node,
