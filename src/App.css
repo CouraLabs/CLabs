@@ -133,34 +133,35 @@
 
 .logo {
   display: block;
-  height: 22px;
+  height: 26px;
   width: auto;
   overflow: visible;
 }
-.logo-c,
-.logo-l {
-  stroke-dasharray: 100;
-  animation: logo-draw 1000ms var(--ease-out) 200ms backwards;
+.logo-c {
+  animation: logo-c-in 900ms var(--ease-out) 200ms backwards;
 }
 .logo-l {
-  animation-delay: 800ms;
+  animation: logo-l-in 900ms var(--ease-out) 560ms backwards;
 }
-@keyframes logo-draw {
+@keyframes logo-c-in {
   from {
-    stroke-dashoffset: 100;
     opacity: 0;
-  }
-  8% {
-    opacity: 1;
+    translate: -40px 0;
   }
 }
-/* The stem drops and settles once per hover; the C stays put. */
+@keyframes logo-l-in {
+  from {
+    opacity: 0;
+    translate: 0 50px;
+  }
+}
+/* The L lifts and settles once per hover; the C stays put. */
 .brand:hover .logo-stem {
-  animation: stem-drop 700ms var(--ease-out);
+  animation: stem-lift 700ms var(--ease-out);
 }
-@keyframes stem-drop {
+@keyframes stem-lift {
   35% {
-    translate: 0 6px;
+    translate: 0 -34px;
   }
 }
 
@@ -1072,7 +1073,7 @@
     gap: 6px;
   }
   .logo {
-    height: 18px;
+    height: 22px;
   }
   .brand {
     font-size: 1rem;

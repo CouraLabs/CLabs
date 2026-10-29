@@ -278,7 +278,7 @@ Calm, solid or glass, always pill.
 
 ### Navigation
 - **Style:** a fixed glass pill bar 14px from the top, 58px tall, inside the container width; it shifts to Glass Strong once the page scrolls.
-- **Brand:** the CL monogram (a squared C open to the right, a stem hanging from its top bar, the bottom bar running on as the L foot; round caps, 14-unit stroke) plus the two-tone wordmark at 1.16rem. The monogram draws on at load; on hover the stem drops and settles once while the C stays put. The same monogram ships as favicon.svg and logo.svg, both following the OS colour scheme.
+- **Brand:** the CL monogram, a faceted C with an L standing in its opening and running out to the right (a filled shape traced from the supplied logo) plus the two-tone wordmark at 1.16rem. The monogram slides in at load (C from the left, L from below); on hover the L lifts and settles once while the C stays put. The same monogram ships as favicon.svg and logo.svg, both following the OS colour scheme.
 - **Links:** muted pills (8px 16px) that take a hairline fill and full text colour on hover.
 - **Tools:** 42px circular hairline buttons for language and theme; the theme button is dropped under 420px (the footer carries both).
 

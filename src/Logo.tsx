@@ -1,23 +1,16 @@
 /**
- * The CL monogram: a squared C open to the right, with a stem hanging from its top bar
- * and the bottom bar running on as the L's foot. Round caps match the project primitives.
+ * The CL monogram, traced from the supplied logo: a faceted C with an L standing in its
+ * opening, the L's foot running out to the right. Filled with currentColor.
  */
+const C = 'M440.0 219.5 L416.0 226.5 L249.0 321.1 L229.9 338.0 L219.6 358.0 L216.0 380.0 L215.0 549.0 L218.6 571.0 L224.9 585.0 L235.0 598.0 L249.0 608.8 L356.1 668.0 L358.7 648.0 L358.1 575.0 L355.6 570.1 L345.0 563.8 L312.0 545.1 L302.7 531.0 L302.0 406.0 L304.4 396.0 L310.1 388.5 L442.0 315.5 L453.0 317.3 L544.0 366.0 L629.2 316.5 L623.0 311.1 L472.0 226.5 L457.0 220.9Z'
+const L = 'M471.1 356.0 L385.0 408.9 L380.3 415.1 L377.5 676.9 L383.0 682.9 L425.0 705.2 L438.0 708.5 L450.0 708.5 L466.0 704.1 L568.0 656.0 L668.2 612.5 L584.0 564.6 L567.0 560.0 L552.0 562.9 L481.0 601.1 L475.9 601.1 L474.0 396.0 L473.0 359.0Z'
+
 export default function Logo({ className = '' }: { className?: string }) {
   return (
-    <svg
-      className={`logo ${className}`.trim()}
-      viewBox="15 17 78 66"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="14"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-      focusable="false"
-    >
-      <path className="logo-c" d="M62 24H38Q22 24 22 40V60Q22 76 38 76H86" pathLength="100" />
+    <svg className={`logo ${className}`.trim()} viewBox="215 219.5 453.2 489" fill="currentColor" aria-hidden="true" focusable="false">
+      <path className="logo-c" d={C} />
       <g className="logo-stem">
-        <path className="logo-l" d="M62 24V56" pathLength="100" />
+        <path className="logo-l" d={L} />
       </g>
     </svg>
   )
