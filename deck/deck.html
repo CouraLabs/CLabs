@@ -1,0 +1,103 @@
+<!doctype html><html><head><meta charset="utf-8"><title>CouraLabs Pitch Deck</title>
+<style>
+@font-face{font-family:Jost;src:url(jost-latin-wght-normal.woff2);font-weight:100 900}
+@font-face{font-family:GM;src:url(geist-mono-latin-wght-normal.woff2);font-weight:100 900}
+@page{size:1280px 720px;margin:0}
+*{box-sizing:border-box;margin:0}
+:root{--g:#0c0e16;--g2:#121522;--t:#eef0f7;--t2:#b0b6cc;--t3:#8a90a8;--co:#ff6b4a;--in:#7a72ff;--mi:#26cf9b;--line:rgba(238,240,247,.12)}
+body{background:var(--g);font-family:Jost,sans-serif;color:var(--t)}
+.s{width:1280px;height:720px;padding:72px 88px;position:relative;overflow:hidden;page-break-after:always;display:flex;flex-direction:column;justify-content:center;background:var(--g)}
+.s::before{content:"";position:absolute;inset:0;background:radial-gradient(600px 400px at 100% 0,rgba(122,114,255,.18),transparent),radial-gradient(500px 360px at 0 100%,rgba(255,107,74,.12),transparent);pointer-events:none}
+.s>*{position:relative}
+.tag{font:500 15px GM;letter-spacing:.12em;text-transform:uppercase;color:var(--t3);margin-bottom:28px}
+h1{font-size:96px;font-weight:600;letter-spacing:-.03em;line-height:1}
+h2{font-size:60px;font-weight:600;letter-spacing:-.02em;line-height:1.08;max-width:980px}
+p.lead{font-size:28px;color:var(--t2);line-height:1.4;max-width:860px;margin-top:28px;font-weight:400}
+.foot{position:absolute!important;left:88px;right:88px;bottom:36px;display:flex;justify-content:space-between;font:400 13px GM;color:var(--t3)}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
+.card{background:var(--g2);border:1px solid var(--line);border-radius:20px;padding:30px}
+.card h3{font-size:30px;font-weight:600;margin-bottom:10px}
+.card p{font-size:21px;color:var(--t2);line-height:1.4}
+.bar{height:6px;border-radius:3px;margin-bottom:22px;width:56px}
+ul{list-style:none;padding:0;margin-top:32px}
+li{font-size:27px;color:var(--t2);line-height:1.35;padding:13px 0 13px 34px;position:relative;border-top:1px solid var(--line)}
+li::before{content:"";position:absolute;left:0;top:26px;width:12px;height:12px;border-radius:50%;background:var(--c,var(--in))}
+.pill{display:inline-block;font:500 14px GM;padding:6px 14px;border-radius:99px;border:1px solid var(--c);color:var(--c);margin-bottom:22px;letter-spacing:.04em}
+.meta{display:flex;gap:36px;margin-top:34px;font:400 16px GM;color:var(--t3)}
+.meta b{display:block;color:var(--t);font-weight:500;margin-top:4px;font-size:17px}
+.split{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+pre{font:400 17px/1.6 GM;background:#080a11;border:1px solid var(--line);border-radius:16px;padding:26px;color:var(--t2);white-space:pre-wrap}
+.url{font:500 26px GM;color:var(--t)}
+</style></head><body>
+
+<section class="s"><div class="tag">Pitch deck · 2026</div>
+<h1>CouraLabs</h1>
+<p class="lead">Open-source software with AI integrations. One independent studio, three public projects, all self-hostable.</p>
+<div class="foot"><span>couralabs.dev</span><span>github.com/CouraLabs</span></div></section>
+
+<section class="s"><div class="tag">The thesis</div>
+<h2>AI belongs in software you can read, run and own.</h2>
+<ul style="--c:var(--co)"><li>Useful AI tools are often closed, hosted-only and opaque.</li>
+<li>Developers want to see the code, self-host it and bring their own model keys.</li>
+<li>Where hosting is easier, a hosted version should exist as a choice, not a requirement.</li></ul>
+<div class="foot"><span>CouraLabs</span><span>02</span></div></section>
+
+<section class="s"><div class="tag">The studio</div>
+<h2>One developer. Real repositories. Honest status.</h2>
+<p class="lead">CouraLabs builds open-source projects where AI earns its place. Every claim traces back to a public repo, and pre-release means pre-release.</p>
+<div class="cols"><div class="card"><div class="bar" style="background:var(--co)"></div><h3>Open source</h3><p>Apache 2.0 and GPL 3.0 projects under github.com/CouraLabs.</p></div>
+<div class="card"><div class="bar" style="background:var(--in)"></div><h3>Self-hostable</h3><p>Run it on your own infrastructure, on your own files, with your own keys.</p></div>
+<div class="card"><div class="bar" style="background:var(--mi)"></div><h3>Hosted, later</h3><p>Hosted versions are planned. Nothing is live, so nothing is promised.</p></div></div>
+<div class="foot"><span>CouraLabs</span><span>03</span></div></section>
+
+<section class="s" style="--c:var(--co)"><div class="tag">Project 01</div>
+<div class="split"><div><span class="pill">PRE-RELEASE · V1 IN PROGRESS</span>
+<h2 style="font-size:68px">Codeboros</h2>
+<p class="lead" style="margin-top:20px">A self-hosted autonomous coding agent.</p>
+<div class="meta"><div>Stack<b>Bun · TypeScript · Docker</b></div><div>License<b>Apache 2.0</b></div></div></div>
+<ul style="margin-top:0"><li>Reviews your codebase and pull requests on your schedule.</li><li>Reproduces a reported bug before claiming a fix.</li><li>Tests its own fix in a real browser, on recorded video.</li><li>A named person reviews every fix before it merges.</li></ul></div>
+<div class="foot"><span>github.com/CouraLabs/Codeboros</span><span>04</span></div></section>
+
+<section class="s" style="--c:var(--in)"><div class="tag">Project 02</div>
+<div class="split"><div><span class="pill">USABLE NOW · INSTALL FROM SOURCE</span>
+<h2 style="font-size:68px">OpenMixing</h2>
+<p class="lead" style="margin-top:20px">An MCP server that lets your agent DJ.</p>
+<div class="meta"><div>Stack<b>Python · MCP · ffmpeg</b></div><div>License<b>GPL 3.0</b></div></div></div>
+<ul style="margin-top:0"><li>Analyzes tempo, key, energy and sections per track.</li><li>Builds a set with EQ, filters, tempo, effects and loops.</li><li>Renders the mix offline.</li><li>A local player shows every move the agent made.</li></ul></div>
+<div class="foot"><span>github.com/CouraLabs/OpenMixing</span><span>05</span></div></section>
+
+<section class="s" style="--c:var(--mi)"><div class="tag">Project 03</div>
+<div class="split"><div><span class="pill">SELF-HOST TODAY</span>
+<h2 style="font-size:68px">OpenHouse</h2>
+<p class="lead" style="margin-top:20px">Household finance with shared books.</p>
+<div class="meta"><div>Stack<b>PostgreSQL · NestJS · React</b></div></div></div>
+<ul style="margin-top:0"><li>One ledger the whole household signs in to.</li><li>Accounts and cards in USD, BRL and EUR.</li><li>Recurring rules, category limits and savings goals.</li><li>Hosted plans planned, one with AI features.</li></ul></div>
+<div class="foot"><span>github.com/CouraLabs/OpenHouse</span><span>06</span></div></section>
+
+<section class="s"><div class="tag">Two ways in</div>
+<h2>Self-host for free, or let CouraLabs host it.</h2>
+<div class="cols" style="grid-template-columns:1fr 1fr">
+<div class="card"><div class="bar" style="background:var(--mi)"></div><h3>Self-host</h3><p>Available now for OpenMixing and OpenHouse. Clone, configure, run. Codeboros follows at v1.</p></div>
+<div class="card"><div class="bar" style="background:var(--in)"></div><h3>Hosted by CouraLabs</h3><p>Planned. Which projects, on what terms and at what price is not decided yet, and nothing is live.</p></div></div>
+<div class="foot"><span>CouraLabs</span><span>07</span></div></section>
+
+<section class="s"><div class="tag">Founder</div>
+<h2>Rodrigo Coura</h2>
+<p class="lead">Full-stack engineer working remotely from Brazil for US companies, with more than ten years of experience.</p>
+<div class="cols" style="grid-template-columns:repeat(4,1fr)">
+<div class="card"><p>.NET</p></div><div class="card"><p>Angular · React</p></div><div class="card"><p>Node.js</p></div><div class="card"><p>Azure · AI tooling</p></div></div>
+<div class="foot"><span>linkedin.com/in/rodrigo-r-coura</span><span>08</span></div></section>
+
+<section class="s"><div class="tag">Roadmap</div>
+<h2>What is shipped, and what is next.</h2>
+<ul style="--c:var(--mi)"><li><b style="color:var(--t)">Now:</b> OpenMixing and OpenHouse run from source or Docker Compose.</li>
+<li><b style="color:var(--t)">Next:</b> Codeboros v1, and a landing page per project on its own subdomain.</li>
+<li><b style="color:var(--t)">Later:</b> hosted versions, once terms are decided.</li></ul>
+<div class="foot"><span>CouraLabs</span><span>09</span></div></section>
+
+<section class="s"><div class="tag">Get in touch</div>
+<h1 style="font-size:80px">Build with us.</h1>
+<div style="margin-top:44px;display:grid;gap:14px"><div class="url">couralabs.dev</div><div class="url" style="color:var(--t2)">github.com/CouraLabs</div><div class="url" style="color:var(--t2)">linkedin.com/in/rodrigo-r-coura</div></div>
+<p style="margin-top:48px;font-size:15px;color:var(--t3);max-width:760px">CouraLabs is independent and not affiliated with Anthropic.</p>
+<div class="foot"><span>CouraLabs</span><span>10</span></div></section>
+</body></html>
