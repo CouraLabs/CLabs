@@ -169,12 +169,12 @@ export default function App() {
     if (scroll) document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
-  // 1-3 pick a project from anywhere on the page.
+  // Number keys pick a project from anywhere on the page.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.metaKey || e.ctrlKey || e.altKey) return
       if (e.target !== document.body) return
-      if (e.key >= '1' && e.key <= '3') choose(Number(e.key) - 1, true)
+      if (e.key >= '1' && e.key <= String(PROJECTS.length)) choose(Number(e.key) - 1, true)
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)

@@ -8,8 +8,7 @@ export const LINKS = {
 /** Flip `live` once a project's subdomain serves its landing page. */
 export const PROJECTS = [
   { id: 'codeboros', name: 'Codeboros', repo: 'https://github.com/CouraLabs/Codeboros', site: 'codeboros.couralabs.dev', live: false },
-  { id: 'openmixing', name: 'OpenMixing', repo: 'https://github.com/CouraLabs/OpenMixing', site: 'openmixing.couralabs.dev', live: false },
-  { id: 'openhouse', name: 'OpenHouse', repo: 'https://github.com/CouraLabs/OpenHouse', site: 'openhouse.couralabs.dev', live: false },
+  { id: 'kantim', name: 'Kantim', repo: 'https://github.com/CouraLabs/Kantim', site: 'kantim.couralabs.dev', live: true },
 ] as const
 
 export type ProjectId = (typeof PROJECTS)[number]['id']
@@ -52,7 +51,7 @@ export const COPY: Record<Lang, Copy> = {
     meta: {
       title: 'CouraLabs: open-source software with AI integrations',
       description:
-        'CouraLabs is an independent studio by Rodrigo Coura. Codeboros, OpenMixing and OpenHouse: open source, self-hostable, with AI where it earns its place.',
+        'CouraLabs is an independent studio by Rodrigo Coura. Codeboros and Kantim: open source, self-hostable, with AI where it earns its place.',
     },
     skip: 'Skip to projects',
     nav: {
@@ -75,7 +74,7 @@ export const COPY: Record<Lang, Copy> = {
     },
     projects: {
       title: 'Projects',
-      lead: 'Three projects, all public. Everything on this page comes straight from each project’s own repo.',
+      lead: 'Two projects, all public. Everything on this page comes straight from each project’s own repo.',
       list: 'Choose a project',
       source: 'View source on GitHub',
       site: 'Project site',
@@ -102,24 +101,7 @@ export const COPY: Record<Lang, Copy> = {
           ['Runs', 'On your infrastructure with your model keys, or as a paid hosted service once it launches'],
         ],
       },
-      openmixing: {
-        kind: 'Self-hosted MCP tools that mix your tracks like a DJ',
-        badge: 'Usable now',
-        status: 'Usable now, installed from source',
-        lines: [
-          'Point your agent at a folder of tracks.',
-          'It works out tempo, key, energy and sections for every track.',
-          'Then it builds a set: EQ, filters, tempo changes, effects, loops.',
-          'The mix renders offline, and a local player shows every move it made.',
-        ],
-        stats: [
-          ['Stack', 'Python, MCP over stdio, ffmpeg'],
-          ['License', 'GPL 3.0'],
-          ['Runs', 'Locally, on your own files'],
-        ],
-        run: { label: 'Install from source', code: 'git clone https://github.com/CouraLabs/OpenMixing.git\ncd OpenMixing\npython -m venv .venv && .venv/bin/pip install -e .[dev]' },
-      },
-      openhouse: {
+      kantim: {
         kind: 'Household management for the whole family: finances, pantry, food, pets and more',
         badge: 'Self-host today',
         status: 'Free to self-host today',
@@ -134,7 +116,7 @@ export const COPY: Record<Lang, Copy> = {
           ['Self-host', 'docker compose up', true],
           ['Runs', 'On your server, or hosted later'],
         ],
-        run: { label: 'Self-host (set JWT_SECRET in .env first)', code: 'git clone https://github.com/CouraLabs/OpenHouse.git\ncd OpenHouse\ncp .env.example .env\ndocker compose up --build -d' },
+        run: { label: 'Self-host (set JWT_SECRET in .env first)', code: 'git clone https://github.com/CouraLabs/Kantim.git\ncd Kantim\ncp .env.example .env\ndocker compose up --build -d' },
       },
     },
     about: {
@@ -165,7 +147,7 @@ export const COPY: Record<Lang, Copy> = {
     meta: {
       title: 'CouraLabs: software open source com integrações de IA',
       description:
-        'CouraLabs é um estúdio independente de Rodrigo Coura. Codeboros, OpenMixing e OpenHouse: open source, para hospedar onde você quiser, com IA onde ela faz diferença.',
+        'CouraLabs é um estúdio independente de Rodrigo Coura. Codeboros e Kantim: open source, para hospedar onde você quiser, com IA onde ela faz diferença.',
     },
     skip: 'Pular para os projetos',
     nav: {
@@ -188,7 +170,7 @@ export const COPY: Record<Lang, Copy> = {
     },
     projects: {
       title: 'Projetos',
-      lead: 'Três projetos, todos públicos. Tudo o que está aqui vem direto do repositório de cada um.',
+      lead: 'Dois projetos, todos públicos. Tudo o que está aqui vem direto do repositório de cada um.',
       list: 'Escolha um projeto',
       source: 'Ver código no GitHub',
       site: 'Site do projeto',
@@ -215,24 +197,7 @@ export const COPY: Record<Lang, Copy> = {
           ['Roda', 'Na sua infraestrutura com suas chaves de modelo, ou como serviço hospedado pago quando lançar'],
         ],
       },
-      openmixing: {
-        kind: 'Ferramentas MCP auto-hospedadas que mixam suas faixas como um DJ',
-        badge: 'Já funciona',
-        status: 'Já funciona, instalado pelo código-fonte',
-        lines: [
-          'Aponte seu agente para uma pasta de músicas.',
-          'Ele descobre andamento, tom, energia e seções de cada faixa.',
-          'Depois monta um set: EQ, filtros, mudanças de andamento, efeitos e loops.',
-          'A mixagem é renderizada offline, e um player local mostra cada movimento dele.',
-        ],
-        stats: [
-          ['Stack', 'Python, MCP via stdio, ffmpeg'],
-          ['Licença', 'GPL 3.0'],
-          ['Roda', 'Localmente, nos seus arquivos'],
-        ],
-        run: { label: 'Instalar pelo código-fonte', code: 'git clone https://github.com/CouraLabs/OpenMixing.git\ncd OpenMixing\npython -m venv .venv && .venv/bin/pip install -e .[dev]' },
-      },
-      openhouse: {
+      kantim: {
         kind: 'Gestão da casa para toda a família: finanças, despensa, comida, pets e mais',
         badge: 'Auto-hospede hoje',
         status: 'Grátis para auto-hospedar hoje',
@@ -247,7 +212,7 @@ export const COPY: Record<Lang, Copy> = {
           ['Auto-hospedar', 'docker compose up', true],
           ['Roda', 'No seu servidor, ou hospedado depois'],
         ],
-        run: { label: 'Auto-hospedar (defina JWT_SECRET no .env antes)', code: 'git clone https://github.com/CouraLabs/OpenHouse.git\ncd OpenHouse\ncp .env.example .env\ndocker compose up --build -d' },
+        run: { label: 'Auto-hospedar (defina JWT_SECRET no .env antes)', code: 'git clone https://github.com/CouraLabs/Kantim.git\ncd Kantim\ncp .env.example .env\ndocker compose up --build -d' },
       },
     },
     about: {
