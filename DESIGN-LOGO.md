@@ -1,12 +1,12 @@
 # App logos
 
-How to draw a CouraLabs app logo so it sits in the same family as Codeboros, OpenMixing and OpenHouse. The finished files live in [icons/](icons/).
+How to draw a CouraLabs app logo so it sits in the same family as Codeboros, OpenMixing and Kantim. The finished files live in [icons/](icons/).
 
 | App | Idea | Drawing |
 |---|---|---|
 | Codeboros | The loop: an agent that keeps going around | An open ring, node at the open end |
 | OpenMixing | Two decks blending | Two overlapping circles, the second dotted, node where they cross |
-| OpenHouse | A home with shared books | A roof triangle over a square, node at the apex |
+| Kantim | A home with shared books | A roof triangle over a square, node at the apex |
 
 ## The idea
 
@@ -81,7 +81,7 @@ Replace the comment with your strokes and node, and swap the colors for the ligh
 <circle cx="63" cy="50" r="29" stroke-width="2.09" stroke-dasharray="0 4.795"/>
 <circle cx="50" cy="24.5" r="4.2" fill="currentColor" stroke="none"/>
 
-<!-- OpenHouse -->
+<!-- Kantim -->
 <path d="M50 12 L86 44 H14 Z"/>
 <path d="M22 52 H78 V88 H22 Z"/>
 <circle cx="50" cy="12" r="4.2" fill="currentColor" stroke="none"/>

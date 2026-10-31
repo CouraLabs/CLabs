@@ -21,8 +21,8 @@ CouraLabs is an independent studio that builds open-source software with AI inte
 - Featured projects (only these three for now):
   - **Codeboros**: a coding agent factory, to self-host or (once launched) use as a paid hosted service. It reviews codebases and pull requests, reproduces reported issues before fixing them, QA-verifies its own fixes on recorded video, and keeps a human reviewing every applied fix. It is pre-v1 and nothing is installable yet. Repo: `CouraLabs/Codeboros` (renamed from Uroboros; the local folder `../Uroboros` still has the old name).
   - **OpenMixing**: self-hosted MCP tools that mix tracks like a DJ. It analyzes the tracks, builds a set with EQ, filter, tempo, fx and loops, renders it offline, and plays the result in a local web player. Repo: `CouraLabs/OpenMixing`.
-  - **OpenHouse**: open-source household management for the whole family: finances, pantry, food, pets and more. Everyone in a household signs in to one shared space (finance today: accounts, transactions, limits and goals), and anyone can run it on their own server for free. Repo: `CouraLabs/OpenHouse` (source: `../OpenHouse/README.md`, `../OpenHouse/PRODUCT.md`).
-- Each featured project has its own landing page on a subdomain: codeboros.couralabs.dev, openmixing.couralabs.dev, openhouse.couralabs.dev. couralabs.dev is the studio hub and links to each one. The user wrote "coreboros" once; the name is Codeboros, so the subdomain is recorded as codeboros (confirm when the DNS is set up).
+  - **Kantim**: open-source household management for the whole family: finances, pantry, food, pets and more. Everyone in a household signs in to one shared space (finance today: accounts, transactions, limits and goals), and anyone can run it on their own server for free. Repo: `CouraLabs/Kantim` (source: `../Kantim/README.md`, `../Kantim/PRODUCT.md`).
+- Each featured project has its own landing page on a subdomain: codeboros.couralabs.dev, openmixing.couralabs.dev, kantim.couralabs.dev. couralabs.dev is the studio hub and links to each one. The user wrote "coreboros" once; the name is Codeboros, so the subdomain is recorded as codeboros (confirm when the DNS is set up).
 - Other CouraLabs projects exist (KraudeKode, Picobu, claude-adhd, claude-ui-mod, pi-extensions). They are left off the site for now; don't add them unless the user asks.
 - Founder: Rodrigo Coura, a full-stack engineer working remotely from Brazil for US companies, with more than ten years of experience (.NET, Angular, React, Node.js, Azure, AI tooling). Source: `../REsume.pdf`.
 
@@ -37,12 +37,12 @@ CouraLabs is an independent studio that builds open-source software with AI inte
 - Open: whether the project landing pages live in this repository or in each project's repository, and whether a hosted app shares its project's subdomain.
 
 ## Brand Commitments
-- The name is "CouraLabs" (one word, capital C and L). Project names: "Codeboros", "OpenMixing" and "OpenHouse".
+- The name is "CouraLabs" (one word, capital C and L). Project names: "Codeboros", "OpenMixing" and "Kantim".
 - There is no final logo. The explorations in `../Logos/couralabs` and `../Logos/coura-labs` are not binding.
 - KraudeKode's public disclaimer pattern applies to anything Claude-related: CouraLabs is independent and not affiliated with Anthropic. The site names no Claude product today, so the footer carries no disclaimer (removed by the user 2026-10-29); restore it if Claude-related work is added.
 
 ## Evidence on Hand
-- The project READMEs: `../Uroboros/README.md`, `../OpenMixing/README.md` and `../OpenHouse/README.md`. OpenMixing also has `../OpenMixing/PRODUCT.md`.
+- The project READMEs: `../Uroboros/README.md`, `../OpenMixing/README.md` and `../Kantim/README.md`. OpenMixing also has `../OpenMixing/PRODUCT.md`.
 - The resume, as source material only: `../REsume.pdf`.
 - There are no testimonials, user counts, star counts, benchmarks, press, or customer logos. Don't invent any. Live GitHub data may be shown only if it is fetched for real.
 

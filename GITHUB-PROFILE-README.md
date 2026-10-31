@@ -30,7 +30,7 @@ Three projects, all public.
 
 **Stack:** Python, MCP over stdio, ffmpeg · **License:** GPL 3.0 · **Runs:** locally, on your own files
 
-### [OpenHouse](https://github.com/CouraLabs/OpenHouse)
+### [Kantim](https://github.com/CouraLabs/Kantim)
 *Household finance with shared books* · Free to self-host today
 
 - One shared ledger that everyone in the house signs in to.
